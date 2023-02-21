@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 
 export const Container = styled.div`
-	/* margin-left: 50px; */
+	margin-left: 50px;
+	justify-items: center;
 	margin-top: 26px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	width: 100%;
 	gap: 26px;
 `;

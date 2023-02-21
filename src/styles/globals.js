@@ -49,3 +49,17 @@ export const Text = styled.p`
 	color: ${(props) => props.theme.colors.text_secondary};
 	line-height: 24px;
 `;
+export const Separator = styled.div`
+	border: 0.5px solid ${(props) => props.theme.colors.text_secondary};
+	margin: 0 10px;
+`;
+
+export const InnerBox = styled.div`
+	width: 100%; //${(props) => props.width};
+	height: ${(props) => props.height};
+	display: flex;
+	flex-direction: ${(props) => props.direction};
+	justify-content: center;
+	align-items: center;
+	gap: ${(props) => props.gap};
+`;
