@@ -1,13 +1,26 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { Main, LeftSide, Text } from '../styles/pages/indexStyles';
+import {
+	Main,
+	LeftSide,
+	Text,
+	RightSide,
+	Title,
+	Label,
+	Field,
+	Input,
+} from '../styles/pages/indexStyles';
+import Box from '@/components/Box/Box';
+import { InnerBox } from '@/styles/globals';
 
 export default function Login() {
 	const [text1, setText1] = useState('');
 	const [text2, setText2] = useState('');
 	const [text3, setText3] = useState('');
 	const [text4, setText4] = useState('');
+	const [username, setUsername] = useState('');
+	const [password, setPassword] = useState('');
 
 	const text = [
 		'Welcome to',
@@ -32,7 +45,7 @@ export default function Login() {
 		<>
 			{/* Adds things to the head tag of the page */}
 			<Head>
-				<title>Dashboard</title>
+				<title>Login</title>
 				<meta
 					name='description'
 					content='HRIS Nexus Authentication Page'
@@ -59,6 +72,35 @@ export default function Login() {
 						{text4}
 					</Text>
 				</LeftSide>
+				<RightSide>
+					<Title>Login</Title>
+					<Box
+						radius='10px'
+						width='600px'
+						height='335px'>
+						<InnerBox
+							direction='column'
+							height='100%'
+							gap='50px'>
+							<Field>
+								<Label for='username'>Username:</Label>
+								<Input
+									type='email'
+									name='username'
+									value={username}
+									onChange={(e) => setUsername(e.target.value)}></Input>
+							</Field>
+							<Field>
+								<Label for='password'>Password:</Label>
+								<Input
+									type='password'
+									name='password'
+									value={password}
+									onChange={(e) => setPassword(e.target.value)}></Input>
+							</Field>
+						</InnerBox>
+					</Box>
+				</RightSide>
 			</Main>
 		</>
 	);

@@ -5,7 +5,7 @@ export const Header = styled.header`
 	width: 100%;
 	height: 92px;
 	position: absolute;
-	background-color: white;
+	background-color: ${(props) => props.theme.colors.bg_white};
 `;
 export const Container = styled.div`
 	margin-top: 20px;

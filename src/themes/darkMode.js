@@ -7,10 +7,10 @@ const theme = {
 	// Colors for layout
 	colors: {
 		bg_primary: '#5A57FF',
-		bg_secondary: '#FAF9FF',
-		bg_white: '#fff',
-		text_primary: '#353535',
-		text_secondary: '#888888',
+		bg_secondary: '#353535',
+		bg_white: '#555',
+		text_primary: '#fff',
+		text_secondary: '#FAF9FF',
 		side_links: '#cccccc',
 	},
 	// Breakpoints for responsive design

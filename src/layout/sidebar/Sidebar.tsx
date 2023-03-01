@@ -24,7 +24,7 @@ const Sidebar = () => {
 				<Logo />
 				<Links>
 					<StyledLink
-						href='/'
+						href='/dashboard'
 						route={router.asPath === '/dashboard'}>
 						<Icon className=''>
 							<HiOutlineChartSquareBar />

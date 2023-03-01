@@ -1,13 +1,20 @@
 import { ThemeProvider } from 'styled-components';
+import { useDarkMode } from '@/customHooks/useDarkMode';
 
-import theme from '../themes/default';
+import lightTheme from '../themes/default';
+import darkTheme from '../themes/darkMode';
 import GlobalStyles from './globals';
 
-const Theme = ({ children }) => (
-	<ThemeProvider theme={theme}>
-		<GlobalStyles />
-		{children}
-	</ThemeProvider>
-);
+const Theme = ({ children }) => {
+	const [theme, themeToggler] = useDarkMode();
+
+	const themeMode = theme === 'light' ? lightTheme : darkTheme;
+	return (
+		<ThemeProvider theme={themeMode}>
+			<GlobalStyles />
+			{children}
+		</ThemeProvider>
+	);
+};
 
 export default Theme;
