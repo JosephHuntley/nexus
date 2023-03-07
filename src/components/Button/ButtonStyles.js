@@ -5,7 +5,10 @@ export const MainButton = styled.button`
 	height: 29px;
 	background-color: ${(props) => props.theme.colors.bg_primary};
 	color: #fff;
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: ${(props) =>
+		props.theme.colors.bg_white === '#fff'
+			? '0px 4px 4px rgba(0, 0, 0, 0.25)'
+			: 'none'};
 	border-radius: 3px;
 	border: none;
 	cursor: pointer;

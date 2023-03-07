@@ -41,3 +41,11 @@ export const HorizontalSeparator = styled.div`
 	min-height: 10px;
 	height: 80vh;
 `;
+
+export const Section = styled.section`
+	margin-left: 50px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+`;

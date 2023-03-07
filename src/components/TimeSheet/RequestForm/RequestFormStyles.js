@@ -44,6 +44,7 @@ export const RequestDate = styled.input`
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 16px;
+	background: transparent;
 	color: ${(props) => props.theme.colors.text_primary};
 	border: 1px solid ${(props) => props.theme.colors.text_secondary};
 	border-radius: 3px;

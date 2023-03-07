@@ -13,6 +13,8 @@ import {
 } from '../styles/pages/indexStyles';
 import Box from '@/components/Box/Box';
 import { InnerBox } from '@/styles/globals';
+import Button from '@/components/Button/Button';
+import { useRouter } from 'next/router';
 
 export default function Login() {
 	const [text1, setText1] = useState('');
@@ -21,6 +23,8 @@ export default function Login() {
 	const [text4, setText4] = useState('');
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
+
+	const router = useRouter();
 
 	const text = [
 		'Welcome to',
@@ -98,6 +102,14 @@ export default function Login() {
 									value={password}
 									onChange={(e) => setPassword(e.target.value)}></Input>
 							</Field>
+							<Button
+								click={() => {
+									// TODO: Validate username and password
+									// TODO: set cookie isLoggedIn
+									router.push('/dashboard');
+								}}>
+								Submit
+							</Button>
 						</InnerBox>
 					</Box>
 				</RightSide>

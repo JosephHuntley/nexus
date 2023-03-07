@@ -39,6 +39,8 @@ export const DOTW = styled.p`
 
 export const Field = styled.input`
 	width: 140px;
+	background: transparent;
+	color: ${(props) => props.theme.colors.text_primary};
 	outline: none;
 	border: none;
 	display: flex;
@@ -85,6 +87,7 @@ export const Date = styled.select`
 	font-size: 16px;
 	line-height: 16px;
 	color: ${(props) => props.theme.colors.text_primary};
+	background: transparent;
 	border: 1px solid ${(props) => props.theme.colors.text_secondary};
 	border-radius: 3px;
 	&:active {
