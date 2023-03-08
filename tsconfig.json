@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/TimeSheet/TimeCard"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/TimeSheet/TimeCard", "src/styles/pages/DashboardStyles.js"],
   "exclude": ["node_modules"]
 }

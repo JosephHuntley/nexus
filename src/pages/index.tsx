@@ -90,7 +90,7 @@ export default function Login() {
 							gap='50px'
 							md_gap='25px'>
 							<Field>
-								<Label for='username'>Username:</Label>
+								<Label htmlFor='username'>Username:</Label>
 								<Input
 									type='email'
 									name='username'
@@ -98,7 +98,7 @@ export default function Login() {
 									onChange={(e) => setUsername(e.target.value)}></Input>
 							</Field>
 							<Field>
-								<Label for='password'>Password:</Label>
+								<Label htmlFor='password'>Password:</Label>
 								<Input
 									type='password'
 									name='password'

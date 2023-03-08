@@ -6,11 +6,11 @@ import { Main } from './LayoutStyles';
 
 type props = {
 	children: ReactNode;
-	isLoggedIn: boolean;
 };
 
-function Layout({ children, isLoggedIn = true }: props) {
+function Layout({ children }: props) {
 	const router = useRouter();
+	let isLoggedIn = true;
 	// TODO: Handle redirect if user not logged in.
 	useEffect(() => {
 		if (!isLoggedIn) {

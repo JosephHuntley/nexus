@@ -14,7 +14,7 @@ export const SideMenu = styled.section`
 	margin: 20px 0;
 `;
 
-export const MenuItem = styled.div`
+export const MenuItem = styled.div<{ isWhite: boolean }>`
 	background-color: ${(props) =>
 		props.isWhite ? props.theme.colors.bg_white : 'inherit'};
 	width: 100%;
