@@ -26,7 +26,7 @@ export const Container = styled.div<{
 		box-shadow: none;
 	}
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.phone} {
 		width: ${(props) => props.md_width};
 		height: ${(props) => props.md_height};
 	}

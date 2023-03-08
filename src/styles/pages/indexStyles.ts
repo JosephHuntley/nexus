@@ -6,21 +6,21 @@ export const Main = styled.main`
 	display: flex;
 	flex-direction: row;
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		flex-direction: column;
 	}
 `;
 
 export const LeftSide = styled.section`
 	background-color: ${(props) => props.theme.colors.bg_primary};
-	height: 100vh;
+	min-height: 100vh;
 	width: 50vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0 77px;
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		width: 100vw;
 		height: 90vh;
 		padding: 0 45px;
@@ -38,13 +38,13 @@ export const Text = styled.h1`
 	color: #ffffff;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		font-size: 35px;
 	}
 `;
 export const RightSide = styled.section`
 	background-color: ${(props) => props.theme.colors.bg_secondary};
-	height: 100vh;
+	min-height: 100vh;
 	width: 50vw;
 	display: flex;
 	flex-direction: column;
@@ -53,7 +53,7 @@ export const RightSide = styled.section`
 	/* padding: 129px; */
 	gap: 84px;
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		width: 100vw;
 		height: 90vh;
 		padding: 0 45px;
@@ -75,7 +75,7 @@ export const Field = styled.div`
 	flex-direction: row;
 	gap: 30px;
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		flex-direction: column;
 		gap: 10px;
 	}
@@ -86,7 +86,7 @@ export const Label = styled.label`
 	font-weight: 600;
 	font-size: 26px;
 	line-height: 39px;
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		text-align: center;
 	}
 `;
@@ -100,4 +100,8 @@ export const Input = styled.input`
 	border: 1px solid ${(props) => props.theme.colors.text_secondary};
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 3px;
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: 225px;
+	}
 `;
