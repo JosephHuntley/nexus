@@ -4,8 +4,32 @@ import { useDarkMode } from '@/customHooks/useDarkMode';
 import lightTheme from '../themes/default';
 import darkTheme from '../themes/darkMode';
 import GlobalStyles from './globals';
+import { ReactNode } from 'react';
 
-const Theme = ({ children }) => {
+export type theme = {
+	theme: {
+		fonts: {
+			title: string;
+			main: string;
+		};
+		colors: {
+			bg_primary: string;
+			bg_secondary: string;
+			bg_white: string;
+			text_primary: string;
+			text_secondary: string;
+			side_links: string;
+		};
+		breakpoints: {
+			sm: string;
+			md: string;
+			lg: string;
+			xl: string;
+		};
+	};
+};
+
+const Theme = ({ children }: { children: ReactNode }) => {
 	const [theme, themeToggler] = useDarkMode();
 
 	const themeMode = theme === 'light' ? lightTheme : darkTheme;

@@ -1,7 +1,8 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import { theme } from './Theme';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle<theme>`
   ${normalize};
   * {
     box-sizing: border-box;
@@ -12,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
-  body {
+  body{
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     background: ${(props) => props.theme.colors.bg_secondary};
@@ -54,12 +55,21 @@ export const Separator = styled.div`
 	margin: 0 10px;
 `;
 
-export const InnerBox = styled.div`
-	width: 100%; //${(props) => props.width};
+export const InnerBox = styled.div<{
+	height?: string;
+	direction?: string;
+	gap?: string;
+	md_gap?: string;
+}>`
+	width: 100%;
 	height: ${(props) => props.height};
 	display: flex;
 	flex-direction: ${(props) => props.direction};
 	justify-content: center;
 	align-items: center;
 	gap: ${(props) => props.gap};
+
+	@media ${(props) => props.theme.breakpoints.md} {
+		gap: ${(props) => props.md_gap};
+	}
 `;

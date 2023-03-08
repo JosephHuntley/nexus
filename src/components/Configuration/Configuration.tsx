@@ -11,7 +11,7 @@ function Configuration() {
 	return (
 		<Section>
 			<Label>
-				<Field>Dark Mode:</Field>
+				<Field>Dark Mode: </Field>
 				<Input
 					checked={theme === 'dark'}
 					type='checkbox'

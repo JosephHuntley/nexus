@@ -1,6 +1,9 @@
+import { ReactNode } from 'react';
 import styled from 'styled-components';
 
-export const MainButton = styled.button`
+export const MainButton = styled.button<{
+	bg_white?: string;
+}>`
 	width: 125px;
 	height: 29px;
 	background-color: ${(props) => props.theme.colors.bg_primary};

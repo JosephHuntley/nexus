@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{
+	radius: string;
+	width: string;
+	height: string;
+	isShadow: boolean;
+	md_width: string;
+	md_height: string;
+}>`
 	border: 1px solid ${(props) => props.theme.colors.text_secondary};
 	background: ${(props) => props.theme.colors.bg_white};
 	border-radius: ${(props) => props.radius};
@@ -17,5 +24,10 @@ export const Container = styled.div`
 			: 'none'};
 	&:hover {
 		box-shadow: none;
+	}
+
+	@media ${(props) => props.theme.breakpoints.md} {
+		width: ${(props) => props.md_width};
+		height: ${(props) => props.md_height};
 	}
 `;

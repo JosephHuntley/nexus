@@ -7,6 +7,8 @@ type BoxProps = {
 	height?: string;
 	isShadow?: boolean;
 	radius?: string;
+	md_width?: string;
+	md_height?: string;
 };
 
 function Box({
@@ -15,13 +17,17 @@ function Box({
 	height = '237px',
 	isShadow = true,
 	radius = '40px',
+	md_height = 'inherit',
+	md_width = '0px',
 }: BoxProps) {
 	return (
 		<Container
 			width={width}
 			height={height}
 			isShadow={isShadow}
-			radius={radius}>
+			radius={radius}
+			md_height={md_height}
+			md_width={md_width}>
 			{children}
 		</Container>
 	);

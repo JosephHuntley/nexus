@@ -40,7 +40,7 @@ export const Switch = styled.div`
 	}
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<{ onChange: any }>`
 	opacity: 0;
 	position: absolute;
 

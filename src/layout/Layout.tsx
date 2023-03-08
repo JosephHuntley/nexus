@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, ReactNode } from 'react';
 import { useRouter } from 'next/router';
 import Sidebar from './sidebar/Sidebar';
 import Header from './header/Header';
 import { Main } from './LayoutStyles';
 
-function Layout({ children, isLoggedIn = true }) {
+type props = {
+	children: ReactNode;
+	isLoggedIn: boolean;
+};
+
+function Layout({ children, isLoggedIn = true }: props) {
 	const router = useRouter();
 	// TODO: Handle redirect if user not logged in.
 	useEffect(() => {

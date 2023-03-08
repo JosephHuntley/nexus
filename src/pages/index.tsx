@@ -80,12 +80,15 @@ export default function Login() {
 					<Title>Login</Title>
 					<Box
 						radius='10px'
-						width='600px'
-						height='335px'>
+						width='40vw'
+						height='335px'
+						md_height='335px'
+						md_width='80vw'>
 						<InnerBox
 							direction='column'
 							height='100%'
-							gap='50px'>
+							gap='50px'
+							md_gap='25px'>
 							<Field>
 								<Label for='username'>Username:</Label>
 								<Input
