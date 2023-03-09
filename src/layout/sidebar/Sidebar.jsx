@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import {
 	Section,
 	Links,
@@ -68,9 +67,9 @@ const Sidebar = () => {
 					Settings
 				</StyledLink>
 				{/* Sign out button */}
+				{/* TODO: Logout functionality */}
 				<LogoutButton onChange={() => {}}>
 					<Icon className=''>
-						{' '}
 						<IoExitOutline />
 					</Icon>
 					Sign Out
