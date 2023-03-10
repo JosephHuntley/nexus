@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import { Main } from './LayoutStyles';
 import useWindowSize from '@/customHooks/useWindowSize';
 import MobileMenu from './MobileMenu/MobileMenu';
+import Footer from './Footer/Footer';
 
 type props = {
 	children: ReactNode;
@@ -40,6 +41,7 @@ function Layout({ children }: props) {
 			)}
 
 			<Main>{children}</Main>
+			<Footer />
 		</>
 	);
 }

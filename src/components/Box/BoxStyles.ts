@@ -5,8 +5,10 @@ export const Container = styled.div<{
 	width: string;
 	height: string;
 	isShadow: boolean;
-	md_width: string;
-	md_height: string;
+	md_width?: string;
+	md_height?: string;
+	sm_height?: string;
+	sm_width?: string;
 }>`
 	border: 1px solid ${(props) => props.theme.colors.text_secondary};
 	background: ${(props) => props.theme.colors.bg_white};
@@ -29,5 +31,10 @@ export const Container = styled.div<{
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		width: ${(props) => props.md_width};
 		height: ${(props) => props.md_height};
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: ${(props) => props.sm_width};
+		height: ${(props) => props.sm_height};
 	}
 `;

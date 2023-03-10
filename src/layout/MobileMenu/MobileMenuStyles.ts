@@ -39,9 +39,8 @@ export const StyledLink = styled(Link)<{ route: boolean }>`
 	color: ${(props) =>
 		props.route ? '#ffffff' : props.theme.colors.side_links};
 	font-size: 32px;
-	line-height: 24px;
 	padding: 5px;
-	display: flex;
+
 	&:active {
 		color: #ffffff;
 	}

@@ -31,6 +31,16 @@ export const BoxContainer = styled.section`
 	width: 70vw;
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10vw;
+		align-content: center;
+		justify-items: center;
+		width: 100vw;
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -45,6 +55,10 @@ export const InnerBox = styled.article`
 	padding: 32px 24px;
 	width: 100%;
 	height: 100%;
+	@media ${(props) => props.theme.breakpoints.phone} {
+		justify-content: center;
+		align-items: center;
+	}
 `;
 export const Money = styled.h3`
 	font-style: normal;
@@ -52,7 +66,7 @@ export const Money = styled.h3`
 	font-size: 26px;
 	letter-spacing: 0.03em;
 
-	@media ${(props) => props.theme.breakpoints.tablet} {
+	@media ${(props) => props.theme.breakpoints.phone} {
 		font-size: 2.5rem;
 	}
 `;
@@ -81,8 +95,18 @@ export const Eye = styled(MyProvider)`
 	}
 `;
 
+export const NotificationTitle = styled.div`
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		margin-left: 50px;
+	}
+`;
+
 export const NotificationContainer = styled.section`
 	gap: 10px;
 	display: flex;
 	flex-direction: column;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		align-items: center;
+	}
 `;

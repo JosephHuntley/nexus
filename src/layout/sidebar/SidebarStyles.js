@@ -28,10 +28,9 @@ export const StyledLink = styled(Link)`
 	color: ${(props) =>
 		props.route ? '#ffffff' : props.theme.colors.side_links};
 	font-size: 16px;
-	line-height: 24px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	display: flex;
+
 	&:active {
 		color: #ffffff;
 	}

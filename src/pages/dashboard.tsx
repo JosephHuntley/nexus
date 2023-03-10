@@ -11,6 +11,7 @@ import {
 	TitleContainer,
 	NotificationContainer,
 	Container,
+	NotificationTitle,
 } from '../styles/pages/DashboardStyles';
 import Box from '@/components/Box/Box';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
@@ -36,8 +37,10 @@ const PayStatement = ({ amount, date, hours }: PayStatementsProps) => {
 		<Box
 			width='23vw'
 			height='17vw'
-			md_width='75vw'
-			md_height='50rvw'>
+			sm_width='75vw'
+			sm_height='50vw'
+			md_height='25vw'
+			md_width='32.5vw'>
 			<InnerBox>
 				<TitleSecondary>Latest Pay Statement</TitleSecondary>
 				<Div1>
@@ -101,7 +104,9 @@ export default function Home() {
 							hours={80}
 						/>
 					</BoxContainer>
-					<Title>Notifications</Title>
+					<NotificationTitle>
+						<Title>Notifications</Title>
+					</NotificationTitle>
 					<NotificationContainer>
 						<NotificationsBox />
 					</NotificationContainer>

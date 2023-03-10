@@ -1,12 +1,12 @@
 import React from 'react';
 import Box from '../Box/Box';
 import {
-	InnerBox,
 	NotificationTitle,
 	Status,
 	Div1,
 	Notification,
 } from './NoitificationsBoxStyles';
+import { InnerBox } from '@/styles/globals';
 
 function NotificationsBox() {
 	return (
@@ -15,7 +15,11 @@ function NotificationsBox() {
 			height='274px'
 			md_height='inherit'
 			md_width='90vw'>
-			<InnerBox>
+			<InnerBox
+				padding='48px 116px'
+				md_padding='24px 48px'
+				height='100%'
+				direction='column'>
 				<Notification>
 					<NotificationTitle>Welcome to Our New Webpage!</NotificationTitle>
 					<Div1>

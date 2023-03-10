@@ -51,9 +51,6 @@ export const TitleSecondary = styled.h2`
 		font-size: 2rem;
 		align-self: center;
 	}
-	/* @media ${(props) => props.theme.breakpoints.phone} {
-		font-size: ;
-	} */
 `;
 export const Text = styled.p`
 	font-size: 16px;
@@ -74,6 +71,8 @@ export const InnerBox = styled.div<{
 	direction?: string;
 	gap?: string;
 	md_gap?: string;
+	padding?: string;
+	md_padding?: string;
 }>`
 	width: 100%;
 	height: ${(props) => props.height};
@@ -82,8 +81,10 @@ export const InnerBox = styled.div<{
 	justify-content: center;
 	align-items: center;
 	gap: ${(props) => props.gap};
+	padding: ${(props) => props.padding};
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.tablet} {
 		gap: ${(props) => props.md_gap};
+		padding: ${(props) => props.md_padding};
 	}
 `;
