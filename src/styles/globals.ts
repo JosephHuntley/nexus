@@ -36,19 +36,33 @@ export const Title = styled.h2`
 	font-size: 26px;
 	font-weight: bold;
 	color: ${(props) => props.theme.colors.text_primary};
-	line-height: 39px;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 32px;
+	}
 `;
 export const TitleSecondary = styled.h2`
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 375;
 	color: ${(props) => props.theme.colors.text_secondary};
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2rem;
+		align-self: center;
+	}
+	/* @media ${(props) => props.theme.breakpoints.phone} {
+		font-size: ;
+	} */
 `;
 export const Text = styled.p`
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 600;
 	color: ${(props) => props.theme.colors.text_secondary};
-	line-height: 24px;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2rem;
+	}
 `;
 export const Separator = styled.div`
 	border: 0.5px solid ${(props) => props.theme.colors.text_secondary};

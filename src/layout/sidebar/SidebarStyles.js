@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const Section = styled.section`
 	background-color: ${(props) => props.theme.colors.bg_primary};
-	width: 280px;
+	width: 20vw;
 	min-height: 600px;
 	height: 100%;
 	border-radius: 0 40px 40px 0;

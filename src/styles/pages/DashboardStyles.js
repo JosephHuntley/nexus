@@ -10,6 +10,10 @@ export const Container = styled.div`
 	flex-direction: column;
 	width: 100%;
 	gap: 26px;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		margin-left: 0;
+	}
 `;
 
 export const TitleContainer = styled.section`
@@ -17,30 +21,40 @@ export const TitleContainer = styled.section`
 	flex-direction: column;
 	margin-left: 50px;
 	margin-top: 26px;
-	/* margin-left: 50px; */
 `;
 
 export const BoxContainer = styled.section`
 	display: flex;
 	flex-direction: row;
 	gap: 24px;
-	/* margin-top: 32px; */
-	/* margin-left: 50px; */
+	justify-content: space-around;
+	width: 70vw;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+	}
 `;
 
 export const InnerBox = styled.article`
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	margin-left: 16px;
-	margin-top: 32px;
+	padding: 32px 24px;
+	width: 100%;
+	height: 100%;
 `;
 export const Money = styled.h3`
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 39px;
 	letter-spacing: 0.03em;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2.5rem;
+	}
 `;
 
 export const Div1 = styled.div`
@@ -60,11 +74,14 @@ export const Eye = styled(MyProvider)`
 	margin-left: 10px;
 	width: 24px;
 	height: 24px;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
 `;
 
 export const NotificationContainer = styled.section`
-	/* margin-left: 50px; */
-	/* margin-top: 32px; */
 	gap: 10px;
 	display: flex;
 	flex-direction: column;

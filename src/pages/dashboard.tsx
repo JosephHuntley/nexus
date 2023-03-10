@@ -33,7 +33,11 @@ type PayStatementsProps = {
 const PayStatement = ({ amount, date, hours }: PayStatementsProps) => {
 	const [isVisible, setIsVisible] = useState(false);
 	return (
-		<Box>
+		<Box
+			width='23vw'
+			height='17vw'
+			md_width='75vw'
+			md_height='50vw'>
 			<InnerBox>
 				<TitleSecondary>Latest Pay Statement</TitleSecondary>
 				<Div1>

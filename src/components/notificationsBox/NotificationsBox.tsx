@@ -12,7 +12,9 @@ function NotificationsBox() {
 	return (
 		<Box
 			width='1032px'
-			height='274px'>
+			height='274px'
+			md_height='inherit'
+			md_width='90vw'>
 			<InnerBox>
 				<Notification>
 					<NotificationTitle>Welcome to Our New Webpage!</NotificationTitle>
