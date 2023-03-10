@@ -6,7 +6,7 @@ import {
 	Icon,
 	LogoutButton,
 } from './SidebarStyles';
-import Logo from '../../components/logo/Logo';
+import Logo from '../../components/Logo/Logo';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FaRegMoneyBillAlt } from 'react-icons/fa';
 import { HiOutlineChartSquareBar } from 'react-icons/hi';

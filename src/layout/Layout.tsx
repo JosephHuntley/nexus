@@ -1,7 +1,7 @@
 import React, { useEffect, ReactNode, useState } from 'react';
 import { useRouter } from 'next/router';
-import Sidebar from './sidebar/Sidebar';
-import Header from './header/Header';
+import Sidebar from './Sidebar/Sidebar';
+import Header from './Header/Header';
 import { Main } from './LayoutStyles';
 import useWindowSize from '@/customHooks/useWindowSize';
 import MobileMenu from './MobileMenu/MobileMenu';

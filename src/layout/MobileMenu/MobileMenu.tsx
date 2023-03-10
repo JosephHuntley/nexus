@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 // Avatar Image
 import Image from 'next/image';
 import TempImage from '../../../public/profile_pic.png';
-import { Avatar } from '../header/HeaderStyles';
+import { Avatar } from '../Header/HeaderStyles';
 
 function MobileMenu() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

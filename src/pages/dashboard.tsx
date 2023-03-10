@@ -14,7 +14,7 @@ import {
 } from '../styles/pages/DashboardStyles';
 import Box from '@/components/Box/Box';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
-import NotificationsBox from '@/components/notificationsBox/NotificationsBox';
+import NotificationsBox from '@/components/NotificationsBox/NotificationsBox';
 
 // {
 // 	payStatements: {
@@ -37,7 +37,7 @@ const PayStatement = ({ amount, date, hours }: PayStatementsProps) => {
 			width='23vw'
 			height='17vw'
 			md_width='75vw'
-			md_height='50vw'>
+			md_height='50rvw'>
 			<InnerBox>
 				<TitleSecondary>Latest Pay Statement</TitleSecondary>
 				<Div1>
