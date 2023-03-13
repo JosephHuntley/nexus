@@ -19,6 +19,12 @@ export const Container = styled.section`
 	gap: 70px;
 	align-items: center;
 	width: 100%;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		flex-direction: column;
+		margin: 0;
+		margin-top: 2.5rem;
+	}
 `;
 
 export const BoxContainer = styled.div`

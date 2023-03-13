@@ -70,8 +70,10 @@ function TimeCard() {
 				})}
 			</Date>
 			<Box
-				height='329px'
-				width='292px'>
+				height='32.9rem'
+				width='29.2rem'
+				md_height='60vh'
+				md_width='60vw'>
 				<FieldTitle>Date</FieldTitle>
 				<FieldTitle>Hours Worked</FieldTitle>
 				<Separator />
