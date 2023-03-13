@@ -7,7 +7,7 @@ export const Section = styled.section`
 	background-color: ${(props) => props.theme.colors.bg_primary};
 	width: 20vw;
 	min-height: 600px;
-	height: 100%;
+	height: 100vh;
 	border-radius: 0 40px 40px 0;
 	z-index: 10;
 	position: absolute;
