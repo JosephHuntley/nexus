@@ -13,6 +13,7 @@ import {
 	VacationIcon,
 	VacationText,
 	VacationSubtitle,
+	Icon,
 } from '@/styles/pages/TimesheetStyles';
 import { Separator, Title } from '@/styles/globals';
 import RequestForm from '@/components/TimeSheet/RequestForm/RequestForm';
@@ -44,27 +45,35 @@ function Timesheet() {
 					<TimeCard />
 					<VacationContainer>
 						<Box
-							height='188px'
-							width='188px'
-							radius='20px'>
+							height='18.8rem'
+							width='18.8rem'
+							radius='20px'
+							md_height='46vw'
+							md_width='46vw'>
 							<VacationTitle>Vacation Leave</VacationTitle>
 							<Separator />
-							<VacationIcon className=''>
-								<HiOutlineSun />
-							</VacationIcon>
+							<Icon>
+								<VacationIcon className=''>
+									<HiOutlineSun />
+								</VacationIcon>
+							</Icon>
 							{/* TODO: Change Static number to dynamic value */}
 							<BoxContainer>
 								<Box
-									width='76px'
-									height='38px'
-									radius='3px'>
+									width='7.6rem'
+									height='3.8rem'
+									radius='3px'
+									md_height='6.5rem'
+									md_width='17.6rem'>
 									<VacationSubtitle>107HR 43MIN</VacationSubtitle>
 									<VacationText>Available</VacationText>
 								</Box>
 								<Box
-									width='76px'
-									height='38px'
-									radius='3px'>
+									width='7.6rem'
+									height='3.8rem'
+									radius='3px'
+									md_height='6.5rem'
+									md_width='17.6rem'>
 									<VacationSubtitle>0HR 0MIN</VacationSubtitle>
 									<VacationText>Avail</VacationText>
 								</Box>
@@ -73,24 +82,32 @@ function Timesheet() {
 						<Box
 							height='188px'
 							width='188px'
-							radius='20px'>
+							radius='20px'
+							md_height='46vw'
+							md_width='46vw'>
 							<VacationTitle>Floating Holiday</VacationTitle>
 							<Separator />
-							<VacationIcon className=''>
-								<MdOutlineHolidayVillage />
-							</VacationIcon>
+							<Icon>
+								<VacationIcon className=''>
+									<MdOutlineHolidayVillage />
+								</VacationIcon>
+							</Icon>
 							<BoxContainer>
 								<Box
 									width='76px'
 									height='38px'
-									radius='3px'>
+									radius='3px'
+									md_height='6.5rem'
+									md_width='17.6rem'>
 									<VacationSubtitle>16HR 0MIN</VacationSubtitle>
 									<VacationText>Available</VacationText>
 								</Box>
 								<Box
 									width='76px'
 									height='38px'
-									radius='3px'>
+									radius='3px'
+									md_height='6.5rem'
+									md_width='17.6rem'>
 									<VacationSubtitle>17HR 0MIN</VacationSubtitle>
 									<VacationText>Avail</VacationText>
 								</Box>

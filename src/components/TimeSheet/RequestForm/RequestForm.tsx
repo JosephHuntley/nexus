@@ -27,9 +27,11 @@ function RequestForm() {
 	return (
 		<RequestContainer>
 			<Box
-				height='383px'
-				width='383px'
-				radius='20px'>
+				height='38.3rem'
+				width='38.3rem'
+				radius='20px'
+				md_height='78rem'
+				md_width='78rem'>
 				<RequestTitle>Time Off Request</RequestTitle>
 				<Separator />
 				<InnerBox
@@ -37,9 +39,11 @@ function RequestForm() {
 					gap='15px'
 					height='83%'>
 					<Box
-						width='328px'
-						height='77px'
-						radius='3px'>
+						width='32.8rem'
+						height='7.7rem'
+						radius='3px'
+						md_height='38rem'
+						md_width='70rem'>
 						<InnerBox
 							gap='none'
 							direction='row'
@@ -57,9 +61,11 @@ function RequestForm() {
 						</InnerBox>
 					</Box>
 					<Box
-						width='328px'
-						height='77px'
-						radius='3px'>
+						width='32.8rem'
+						height='7.7rem'
+						radius='3px'
+						md_height='38rem'
+						md_width='70rem'>
 						<InnerBox
 							gap='none'
 							direction='row'
@@ -77,9 +83,11 @@ function RequestForm() {
 						</InnerBox>
 					</Box>
 					<Box
-						width='328px'
-						height='77px'
-						radius='3px'>
+						width='32.8rem'
+						height='7.7rem'
+						radius='3px'
+						md_height='38rem'
+						md_width='70rem'>
 						<InnerBox
 							gap='none'
 							direction='row'
