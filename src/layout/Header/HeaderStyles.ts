@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Header = styled.header`
 	width: 100%;
@@ -17,9 +18,14 @@ export const Container = styled.div`
 
 export const Avatar = styled(Link)`
 	border-radius: 100%;
-	width: 66px;
-	height: 66px;
+	width: 6.6rem;
+	height: 6.6rem;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+`;
+
+export const Img = styled(Image)`
+	width: 6.6rem;
+	height: 6.6rem;
 `;
 
 export const UserInfo = styled.div`

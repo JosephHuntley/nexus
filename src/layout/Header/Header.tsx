@@ -7,6 +7,7 @@ import {
 	UserInfo,
 	Name,
 	Email,
+	Img
 } from './HeaderStyles';
 import TempImage from '../../../public/profile_pic.png';
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
 		<Header>
 			<Container>
 				<Avatar href='/settings'>
-					<Image
+					<Img
 						src={TempImage}
 						alt='Avatar'
 					/>
