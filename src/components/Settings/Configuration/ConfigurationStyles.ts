@@ -11,9 +11,17 @@ export const Field = styled.span`
 export const Label = styled.label`
 	display: flex;
 	justify-content: space-between;
-	width: 600px;
-	gap: 50px;
+	width: 60rem;
+	gap: 5rem;
 	cursor: pointer;
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		width: 40rem;
+	}
+	@media ${(props) => props.theme.breakpoints.phone} {
+		flex-direction: column;
+		width: 80vw;
+		gap: 0.7rem;
+	}
 `;
 
 export const Switch = styled.div`

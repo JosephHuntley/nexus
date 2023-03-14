@@ -4,6 +4,10 @@ export const Main = styled.div`
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		flex-direction: column;
+	}
 `;
 
 export const SideMenu = styled.section`
@@ -12,6 +16,11 @@ export const SideMenu = styled.section`
 	width: 29vw;
 	height: 100%;
 	margin: 20px 0;
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: 100%;
+		flex-direction: row;
+	}
 `;
 
 export const MenuItem = styled.div<{ isWhite: boolean }>`
@@ -35,11 +44,18 @@ export const Separator = styled.div`
 	border: 0.5px solid ${(props) => props.theme.colors.side_links};
 `;
 export const HorizontalSeparator = styled.div`
-	border: 0.5px solid ${(props) => props.theme.colors.side_links};
-	width: 0.5px;
+	border: 0.05rem solid ${(props) => props.theme.colors.side_links};
+	width: 0.05rem;
 	margin: 0 10px;
 	min-height: 10px;
 	height: 80vh;
+	@media ${(props) => props.theme.breakpoints.phone} {
+		height: 0.05rem;
+		min-height: 0.05rem;
+		width: 90vw;
+		justify-self: center;
+		align-self: center;
+	}
 `;
 
 export const Section = styled.section`
