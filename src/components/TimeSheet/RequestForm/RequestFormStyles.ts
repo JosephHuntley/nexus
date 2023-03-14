@@ -21,6 +21,10 @@ export const RequestTitle = styled.div`
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		font-size: 3rem;
 	}
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2.4rem;
+		height: 5rem;
+	}
 `;
 
 export const RequestSubtitle = styled.div`
@@ -36,6 +40,9 @@ export const RequestSubtitle = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		font-size: 3rem;
+	}
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2.4rem;
 	}
 `;
 
@@ -56,6 +63,11 @@ export const RequestDate = styled.input`
 		width: 25rem;
 		height: 6rem;
 		font-size: 3rem;
+	}
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2.4rem;
+		width: 15rem;
+		height: 4.5rem;
 	}
 `;
 
@@ -79,5 +91,10 @@ export const RequestType = styled.select`
 		width: 25rem;
 		height: 6rem;
 		font-size: 3rem;
+	}
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2rem;
+		width: 15rem;
+		height: 4.5rem;
 	}
 `;

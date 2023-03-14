@@ -49,7 +49,9 @@ function Timesheet() {
 							width='18.8rem'
 							radius='20px'
 							md_height='46vw'
-							md_width='46vw'>
+							md_width='46vw'
+							sm_height='75vw'
+							sm_width='75vw'>
 							<VacationTitle>Vacation Leave</VacationTitle>
 							<Separator />
 							<Icon>
@@ -64,7 +66,9 @@ function Timesheet() {
 									height='3.8rem'
 									radius='3px'
 									md_height='6.5rem'
-									md_width='17.6rem'>
+									md_width='17.6rem'
+									sm_height='5rem'
+									sm_width='12rem'>
 									<VacationSubtitle>107HR 43MIN</VacationSubtitle>
 									<VacationText>Available</VacationText>
 								</Box>
@@ -73,7 +77,9 @@ function Timesheet() {
 									height='3.8rem'
 									radius='3px'
 									md_height='6.5rem'
-									md_width='17.6rem'>
+									md_width='17.6rem'
+									sm_height='5rem'
+									sm_width='12rem'>
 									<VacationSubtitle>0HR 0MIN</VacationSubtitle>
 									<VacationText>Avail</VacationText>
 								</Box>
@@ -84,7 +90,9 @@ function Timesheet() {
 							width='188px'
 							radius='20px'
 							md_height='46vw'
-							md_width='46vw'>
+							md_width='46vw'
+							sm_height='75vw'
+							sm_width='75vw'>
 							<VacationTitle>Floating Holiday</VacationTitle>
 							<Separator />
 							<Icon>
@@ -98,7 +106,9 @@ function Timesheet() {
 									height='38px'
 									radius='3px'
 									md_height='6.5rem'
-									md_width='17.6rem'>
+									md_width='17.6rem'
+									sm_height='5rem'
+									sm_width='12rem'>
 									<VacationSubtitle>16HR 0MIN</VacationSubtitle>
 									<VacationText>Available</VacationText>
 								</Box>
@@ -107,7 +117,9 @@ function Timesheet() {
 									height='38px'
 									radius='3px'
 									md_height='6.5rem'
-									md_width='17.6rem'>
+									md_width='17.6rem'
+									sm_height='5rem'
+									sm_width='12rem'>
 									<VacationSubtitle>17HR 0MIN</VacationSubtitle>
 									<VacationText>Avail</VacationText>
 								</Box>

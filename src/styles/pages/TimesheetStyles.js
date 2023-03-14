@@ -35,6 +35,7 @@ export const BoxContainer = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		margin-top: 1rem;
+		justify-content: center;
 	}
 `;
 
@@ -48,6 +49,11 @@ export const VacationContainer = styled.article`
 		flex-direction: row;
 		padding: 1rem 2.85rem;
 		width: 100vw;
+	}
+	@media ${(props) => props.theme.breakpoints.phone} {
+		flex-direction: column;
+
+		align-items: center;
 	}
 `;
 
@@ -71,6 +77,10 @@ export const VacationIcon = styled(MyProvider)`
 		height: 16rem;
 		margin: 2rem 0;
 	}
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: 12rem;
+		height: 12rem;
+	}
 `;
 
 export const VacationTitle = styled.div`
@@ -87,6 +97,9 @@ export const VacationTitle = styled.div`
 		font-size: 3rem;
 		height: 6rem;
 	}
+	@media ${(props) => props.theme.breakpoints.phone} {
+		font-size: 2.3rem;
+	}
 `;
 
 export const VacationSubtitle = styled.h3`
@@ -98,6 +111,9 @@ export const VacationSubtitle = styled.h3`
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		font-size: 2rem;
+	}
+	@media ${(props) => props.theme.breakpoints.phone} {
+		font-size: 1rem;
 	}
 `;
 export const VacationText = styled.p`

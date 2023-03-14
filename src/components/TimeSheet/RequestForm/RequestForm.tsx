@@ -31,7 +31,9 @@ function RequestForm() {
 				width='38.3rem'
 				radius='20px'
 				md_height='78rem'
-				md_width='78rem'>
+				md_width='78rem'
+				sm_height='90vw'
+				sm_width='90vw'>
 				<RequestTitle>Time Off Request</RequestTitle>
 				<Separator />
 				<InnerBox
@@ -43,7 +45,9 @@ function RequestForm() {
 						height='7.7rem'
 						radius='3px'
 						md_height='38rem'
-						md_width='70rem'>
+						md_width='70rem'
+						sm_height='24rem'
+						sm_width='90%'>
 						<InnerBox
 							gap='none'
 							direction='row'
@@ -65,7 +69,9 @@ function RequestForm() {
 						height='7.7rem'
 						radius='3px'
 						md_height='38rem'
-						md_width='70rem'>
+						md_width='70rem'
+						sm_height='24rem'
+						sm_width='90%'>
 						<InnerBox
 							gap='none'
 							direction='row'
@@ -87,7 +93,9 @@ function RequestForm() {
 						height='7.7rem'
 						radius='3px'
 						md_height='38rem'
-						md_width='70rem'>
+						md_width='70rem'
+						sm_height='24rem'
+						sm_width='90%'>
 						<InnerBox
 							gap='none'
 							direction='row'

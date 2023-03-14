@@ -11,6 +11,10 @@ export const ButtonContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	gap: 2.7rem;
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		flex-direction: column;
+	}
 `;
 
 export const FieldTitle = styled.h3`
@@ -25,6 +29,9 @@ export const FieldTitle = styled.h3`
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		font-size: 3rem;
+	}
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2.3rem;
 	}
 `;
 
