@@ -74,7 +74,7 @@ function TimeCard() {
 				width='29.2rem'
 				md_height='60vh'
 				md_width='60vw'
-				sm_height='60vh'
+				sm_height='80vh'
 				sm_width='90vw'>
 				<FieldTitle>Date</FieldTitle>
 				<FieldTitle>Hours Worked</FieldTitle>
