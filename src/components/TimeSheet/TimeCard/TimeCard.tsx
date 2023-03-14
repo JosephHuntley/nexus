@@ -10,8 +10,8 @@ import {
 	Table,
 	DOTW,
 } from './TimeCardStyles';
-import Button from '@/components/Button/Button';
-import Box from '@/components/Box/Box';
+import Button from '@/components/Global/Button/Button';
+import Box from '@/components/Global/Box/Box';
 import { InnerBox, Separator } from '@/styles/globals';
 
 const tempData = [

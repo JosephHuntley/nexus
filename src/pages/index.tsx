@@ -11,9 +11,9 @@ import {
 	Field,
 	Input,
 } from '../styles/pages/indexStyles';
-import Box from '@/components/Box/Box';
+import Box from '@/components/Global/Box/Box';
 import { InnerBox } from '@/styles/globals';
-import Button from '@/components/Button/Button';
+import Button from '@/components/Global/Button/Button';
 import { useRouter } from 'next/router';
 
 export default function Login() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '@/layout/Layout';
-import Box from '@/components/Box/Box';
+import Box from '@/components/Global/Box/Box';
 import { HiOutlineSun } from 'react-icons/hi';
 import { MdOutlineHolidayVillage } from 'react-icons/md';
 import {

@@ -13,9 +13,9 @@ import {
 	Container,
 	NotificationTitle,
 } from '../styles/pages/DashboardStyles';
-import Box from '@/components/Box/Box';
+import Box from '@/components/Global/Box/Box';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
-import NotificationsBox from '@/components/NotificationsBox/NotificationsBox';
+import NotificationsBox from '@/components/Dashboard/NotificationsBox/NotificationsBox';
 
 // {
 // 	payStatements: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, Text, StyledLink, Links, Title } from './FooterStyles';
-import Logo from '@/components/Logo/Logo';
+import Logo from '@/components/Global/Logo/Logo';
 
 function Footer() {
 	return (

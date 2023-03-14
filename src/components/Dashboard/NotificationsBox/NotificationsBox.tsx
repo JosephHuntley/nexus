@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '../Box/Box';
+import Box from '../../Global/Box/Box';
 import {
 	NotificationTitle,
 	Status,

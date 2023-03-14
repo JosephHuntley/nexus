@@ -6,9 +6,9 @@ import {
 	RequestDate,
 	RequestType,
 } from './RequestFormStyles';
-import Box from '@/components/Box/Box';
+import Box from '@/components/Global/Box/Box';
 import { InnerBox, Separator } from '@/styles/globals';
-import Button from '@/components/Button/Button';
+import Button from '@/components/Global/Button/Button';
 
 function RequestForm() {
 	const [beginDate, setBeginDate] = useState('');

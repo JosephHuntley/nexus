@@ -8,7 +8,10 @@ import {
 	Main,
 	HorizontalSeparator,
 } from '../styles/pages/SettingsStyles';
-import Configuration from '@/components/Configuration/Configuration';
+
+// Components
+import Configuration from '@/components/Settings/Configuration/Configuration';
+import Profile from '../components/Settings/Profile/Profile';
 
 function Settings() {
 	const [isProfile, setIsProfile] = useState(true);
@@ -68,7 +71,7 @@ function Settings() {
 					</SideMenu>
 					<HorizontalSeparator />
 					{/* Settings page depended on the selected menu item */}
-					{isProfile ? <div>Profile</div> : null}
+					{isProfile ? <Profile /> : null}
 					{isSettings ? <Configuration /> : null}
 					{isPolicy ? <div>Policy</div> : null}
 				</Main>
