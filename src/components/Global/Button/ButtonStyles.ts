@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const MainButton = styled.button<{
 	alt?: boolean;
 }>`
-	width: 8.6vw;
+	min-width: 8.6vw;
 	height: 3.6vh;
 	background-color: ${(props) =>
 		props.alt
@@ -20,9 +20,10 @@ export const MainButton = styled.button<{
 	border: ${(props) =>
 		props.alt ? '.1rem solid ' + props.theme.colors.side_links : 'none'};
 	cursor: pointer;
+	padding: 0 2rem;
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
-		width: 25rem;
+		min-width: 25rem;
 		height: 6rem;
 		font-size: 3rem;
 	}
