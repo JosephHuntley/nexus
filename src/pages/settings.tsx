@@ -12,6 +12,7 @@ import {
 // Components
 import Configuration from '@/components/Settings/Configuration/Configuration';
 import Profile from '../components/Settings/Profile/Profile';
+import Policy from '@/components/Settings/Policy/Policy';
 
 function Settings() {
 	const [isProfile, setIsProfile] = useState(true);
@@ -73,7 +74,7 @@ function Settings() {
 					{/* Settings page depended on the selected menu item */}
 					{isProfile ? <Profile /> : null}
 					{isSettings ? <Configuration /> : null}
-					{isPolicy ? <div>Policy</div> : null}
+					{isPolicy ? <Policy /> : null}
 				</Main>
 			</Layout>
 		</>

@@ -14,13 +14,13 @@ function Navbar() {
 	return (
 		<Header>
 			<Container>
-				<Avatar href='/settings'>
+				{/* <Avatar href='/settings'>
 					<Image
 						src={TempImage}
 						alt='Avatar'
 						fill={true}
 					/>
-				</Avatar>
+				</Avatar> */}
 				<UserInfo>
 					<Name>Joseph Huntley</Name>
 					<Email>Joseph.Huntley@outlook.com</Email>

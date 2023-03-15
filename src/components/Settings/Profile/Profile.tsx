@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Section } from '@/styles/pages/SettingsStyles';
 import Button from '@/components/Global/Button/Button';
-import Modal from '../Modal/Modal';
+import Modal from './Modal/Modal';
 import TempImage from '../../../../public/profile_pic.png';
 import {
 	Img,

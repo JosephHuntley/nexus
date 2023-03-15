@@ -33,8 +33,7 @@ export const Img = styled.img`
 	height: 6.6rem;
 
 	@media ${(props) => props.theme.breakpoints.xs} {
-		width: 1rem;
-		height: 1rem;
+		display: none;
 	}
 `;
 
