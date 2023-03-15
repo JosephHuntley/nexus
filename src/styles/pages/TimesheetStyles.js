@@ -113,7 +113,7 @@ export const VacationSubtitle = styled.h3`
 		font-size: 2rem;
 	}
 	@media ${(props) => props.theme.breakpoints.phone} {
-		font-size: 1rem;
+		font-size: 1.6rem;
 	}
 `;
 export const VacationText = styled.p`
