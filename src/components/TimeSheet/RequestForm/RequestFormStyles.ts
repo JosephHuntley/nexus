@@ -47,7 +47,7 @@ export const RequestSubtitle = styled.div`
 `;
 
 export const RequestDate = styled.input`
-	width: 10rem;
+	width: 13rem;
 	height: 3.2rem;
 	padding: 0.5rem;
 	justify-content: center;

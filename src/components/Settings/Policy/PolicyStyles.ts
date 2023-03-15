@@ -19,7 +19,7 @@ export const PolicyText = styled.p`
 
 export const PolicyContent = styled.div`
 	display: flex;
-	width: 100%;
+	width: 60vw;
 	flex-direction: column;
 	align-items: center;
 	gap: 1.5rem;
