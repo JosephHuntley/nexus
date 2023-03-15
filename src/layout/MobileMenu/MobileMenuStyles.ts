@@ -7,7 +7,7 @@ export const Section = styled.header`
 	position: absolute;
 	background-color: ${(props) => props.theme.colors.bg_white};
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	align-items: center;
 	padding: 0 25px;
 `;
@@ -19,6 +19,7 @@ export const Div1 = styled.div`
 export const Menu = styled.nav`
 	background-color: ${(props) => props.theme.colors.bg_primary};
 	position: fixed;
+	z-index: 10;
 	border-radius: 10px;
 	padding: 3rem 6rem;
 	display: flex;
@@ -30,7 +31,6 @@ export const Menu = styled.nav`
 		width: 70vw;
 		height: 70vh;
 		right: 15vw;
-		z-index: 0;
 		align-items: flex-start;
 		justify-content: space-around;
 	}

@@ -15,6 +15,7 @@ export const Center = styled.section`
 	position: fixed;
 	top: 50%;
 	left: 50%;
+	z-index: 10;
 	transform: translate(-50%, -50%);
 `;
 
@@ -32,6 +33,9 @@ export const ModalBox = styled.div`
 	align-items: center;
 	justify-content: space-around;
 	padding: 2rem;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+	}
 `;
 
 export const ModalHeader = styled.div`
