@@ -24,8 +24,7 @@ export const Avatar = styled(Link)`
 	position: relative;
 
 	@media ${(props) => props.theme.breakpoints.xs} {
-		width: 3.3rem;
-		height: 3.3rem;
+		display: none;
 	}
 `;
 
