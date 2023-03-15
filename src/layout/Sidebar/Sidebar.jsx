@@ -30,7 +30,7 @@ const Sidebar = () => {
 						</Icon>
 						Dashboard
 					</StyledLink>
-					<StyledLink
+					{/* <StyledLink
 						href='/pay'
 						route={router.asPath === '/pay'}>
 						<Icon className=''>
@@ -45,7 +45,7 @@ const Sidebar = () => {
 							<AiOutlineHeart />
 						</Icon>
 						Benefits
-					</StyledLink>
+					</StyledLink> */}
 					<StyledLink
 						href='/timesheet'
 						route={router.asPath === '/timesheet'}>

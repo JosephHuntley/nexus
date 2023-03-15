@@ -39,7 +39,7 @@ function MobileMenu() {
 								route={router.asPath === '/dashboard'}>
 								Dashboard
 							</StyledLink>
-							<StyledLink
+							{/* <StyledLink
 								href='/pay'
 								route={router.asPath === '/pay'}>
 								Pay
@@ -48,7 +48,7 @@ function MobileMenu() {
 								href='/benefits'
 								route={router.asPath === '/benefits'}>
 								Benefits
-							</StyledLink>
+							</StyledLink> */}
 							<StyledLink
 								href='/timesheet'
 								route={router.asPath === '/timesheet'}>
