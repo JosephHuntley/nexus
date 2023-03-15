@@ -35,6 +35,12 @@ export const ModalBox = styled.div`
 	padding: 2rem;
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
+		width: 45vw;
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: 90vw;
+		height: 75vh;
 	}
 `;
 
@@ -58,4 +64,10 @@ export const Password = styled.input`
 	width: 15rem;
 	height: 3rem;
 	text-align: center;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		width: 25rem;
+		height: 5rem;
+		font-size: 3rem;
+	}
 `;

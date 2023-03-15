@@ -7,7 +7,7 @@ export const PolicyText = styled.p`
 	text-align: center;
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
-		width: 65vw;
+		width: 55vw;
 		font-size: 3rem;
 	}
 
@@ -29,6 +29,10 @@ export const PolicyContent = styled.div`
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		height: 80vh;
+		width: 60vw;
+	}
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: 100%;
 	}
 `;
 
