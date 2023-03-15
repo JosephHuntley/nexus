@@ -65,4 +65,8 @@ export const Section = styled.section`
 	width: 51vw;
 	justify-content: center;
 	align-items: center;
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		width: 100vw;
+	}
 `;

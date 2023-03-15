@@ -13,6 +13,7 @@ export const PolicyText = styled.p`
 
 	@media ${(props) => props.theme.breakpoints.phone} {
 		width: 75vw;
+		font-size: 2rem;
 	}
 `;
 
