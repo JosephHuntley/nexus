@@ -15,6 +15,7 @@ import Box from '@/components/Global/Box/Box';
 import { InnerBox } from '@/styles/globals';
 import Button from '@/components/Global/Button/Button';
 import { useRouter } from 'next/router';
+import Alert from '@/components/Global/Alert/Alert';
 
 export default function Login() {
 	const [text1, setText1] = useState('');
@@ -64,6 +65,10 @@ export default function Login() {
 				/>
 			</Head>
 			<Main>
+				<Alert open={true}>
+					This site is still under development. To login, hit the login button
+					without credentials.
+				</Alert>
 				<LeftSide>
 					<Text>
 						{text1}
