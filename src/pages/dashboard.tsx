@@ -26,12 +26,13 @@ import NotificationsBox from '@/components/Dashboard/NotificationsBox/Notificati
 // }
 
 type PayStatementsProps = {
+	type: string;
 	amount: string;
 	date: string;
 	hours: number;
 };
 
-const PayStatement = ({ amount, date, hours }: PayStatementsProps) => {
+const PayStatement = ({ type, amount, date, hours }: PayStatementsProps) => {
 	const [isVisible, setIsVisible] = useState(false);
 	return (
 		<Box
@@ -42,7 +43,7 @@ const PayStatement = ({ amount, date, hours }: PayStatementsProps) => {
 			md_height='25vw'
 			md_width='32.5vw'>
 			<InnerBox>
-				<TitleSecondary>Latest Pay Statement</TitleSecondary>
+				<TitleSecondary>{type} Pay Statement</TitleSecondary>
 				<Div1>
 					<Money>{isVisible ? amount : '$XXXX.XX'}</Money>
 					<div
@@ -89,16 +90,19 @@ export default function Home() {
 				<Container>
 					<BoxContainer>
 						<PayStatement
+							type='Latest'
 							amount='$2500.00'
 							date='Jan 27th, 2023'
 							hours={80}
 						/>
 						<PayStatement
+							type='Previous'
 							amount='$1500.00'
 							date='Jan 27th, 2023'
 							hours={80}
 						/>
 						<PayStatement
+							type='Average'
 							amount='$2000.00'
 							date='Jan 27th, 2023'
 							hours={80}
