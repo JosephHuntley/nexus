@@ -63,3 +63,13 @@ export const LogoutButton = styled.button`
 		cursor: pointer;
 	}
 `;
+
+export const Background = styled.div`
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+`;

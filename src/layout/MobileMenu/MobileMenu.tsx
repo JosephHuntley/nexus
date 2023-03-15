@@ -5,6 +5,7 @@ import {
 	StyledLink,
 	Div1,
 	LogoutButton,
+	Background,
 } from './MobileMenuStyles';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useRouter } from 'next/router';
@@ -28,6 +29,11 @@ function MobileMenu() {
 			<Div1>
 				{isMenuOpen ? (
 					<>
+						<Background
+							onClick={() => {
+								setIsMenuOpen(false);
+							}}
+						/>
 						<Hamburger
 							toggled={isMenuOpen}
 							toggle={() => setIsMenuOpen((prevState) => !prevState)}
