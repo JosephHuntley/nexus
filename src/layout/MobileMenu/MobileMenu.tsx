@@ -19,12 +19,12 @@ function MobileMenu() {
 	const router = useRouter();
 	return (
 		<Section>
-			<Avatar href='/settings'>
+			{/* <Avatar href='/settings'>
 				<Image
 					src={TempImage}
 					alt='Avatar'
 				/>
-			</Avatar>
+			</Avatar> */}
 			<Div1>
 				{isMenuOpen ? (
 					<>
