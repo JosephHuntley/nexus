@@ -22,8 +22,8 @@ function Navbar() {
 					/>
 				</Avatar>
 				<UserInfo>
-					<Name>Joseph Huntley</Name>
-					<Email>Joseph.Huntley@outlook.com</Email>
+					<Name>Tanishq Kumar</Name>
+					<Email>Tanishq.Kumar@example.com</Email>
 				</UserInfo>
 			</Container>
 		</Header>
