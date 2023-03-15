@@ -21,11 +21,22 @@ export const Avatar = styled(Link)`
 	width: 6.6rem;
 	height: 6.6rem;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	position: relative;
+
+	@media ${(props) => props.theme.breakpoints.xs} {
+		width: 3.3rem;
+		height: 3.3rem;
+	}
 `;
 
-export const Img = styled(Image)`
+export const Img = styled.img`
 	width: 6.6rem;
 	height: 6.6rem;
+
+	@media ${(props) => props.theme.breakpoints.xs} {
+		width: 1rem;
+		height: 1rem;
+	}
 `;
 
 export const UserInfo = styled.div`

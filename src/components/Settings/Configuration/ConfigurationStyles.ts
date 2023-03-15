@@ -14,6 +14,7 @@ export const Label = styled.label`
 	width: 60rem;
 	gap: 5rem;
 	cursor: pointer;
+	margin-bottom: 2rem;
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		width: 40rem;
 	}

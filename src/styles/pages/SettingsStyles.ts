@@ -59,9 +59,10 @@ export const HorizontalSeparator = styled.div`
 `;
 
 export const Section = styled.section`
-	margin-left: 50px;
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	width: 51vw;
+	justify-content: center;
+	align-items: center;
 `;
