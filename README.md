@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Notes
 
-This iis strictly the front-end of a mvc application. For this reason it is filled with temporary dummy data instead of data from a DB.
+This is strictly the front-end of a mvc application. For this reason it is filled with temporary dummy data instead of data from a DB.
 
 #
 
