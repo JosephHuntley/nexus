@@ -20,6 +20,7 @@ export const AlertBox = styled.article`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	gap: 1rem;
 
 	&:hover {
 		opacity: 0.6;
