@@ -20,7 +20,7 @@ function Layout({ children }: props) {
 	const windowSize = useWindowSize();
 
 	useEffect(() => {
-		setTimeout(async () => setIsLoadMain(true), 500);
+		setTimeout(async () => setIsLoadMain(true), 300);
 	}, []);
 
 	useEffect(() => {
