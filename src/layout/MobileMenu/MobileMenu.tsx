@@ -48,12 +48,12 @@ function MobileMenu() {
 								route={router.asPath === '/dashboard'}>
 								Dashboard
 							</StyledLink>
-							{/* <StyledLink
+							<StyledLink
 								href='/pay'
 								route={router.asPath === '/pay'}>
 								Pay
 							</StyledLink>
-							<StyledLink
+							{/*<StyledLink
 								href='/benefits'
 								route={router.asPath === '/benefits'}>
 								Benefits

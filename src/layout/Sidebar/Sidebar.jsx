@@ -30,7 +30,7 @@ const Sidebar = () => {
 						</Icon>
 						Dashboard
 					</StyledLink>
-					{/* <StyledLink
+					<StyledLink
 						href='/pay'
 						route={router.asPath === '/pay'}>
 						<Icon className=''>
@@ -38,7 +38,7 @@ const Sidebar = () => {
 						</Icon>
 						Pay
 					</StyledLink>
-					<StyledLink
+					{/*<StyledLink
 						href='/benefits'
 						route={router.asPath === '/benefits'}>
 						<Icon className=''>
