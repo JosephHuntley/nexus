@@ -28,6 +28,7 @@ const LoginBox = () => {
 					<Field>
 						<Label htmlFor='username'>Username:</Label>
 						<Input
+							id='username'
 							type='email'
 							name='username'
 							value={username}
@@ -36,6 +37,7 @@ const LoginBox = () => {
 					<Field>
 						<Label htmlFor='password'>Password:</Label>
 						<Input
+							id='password'
 							type='password'
 							name='password'
 							value={password}
