@@ -19,10 +19,10 @@ function Box({
 	height = '237px',
 	isShadow = true,
 	radius = '40px',
-	md_height = 'inherit',
-	md_width = 'inherit',
-	sm_height = 'inherit',
-	sm_width = 'inherit',
+	md_height = height,
+	md_width = width,
+	sm_height = md_height,
+	sm_width = md_width,
 }: BoxProps) {
 	return (
 		<Container
