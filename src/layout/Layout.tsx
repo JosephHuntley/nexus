@@ -13,7 +13,7 @@ type props = {
 };
 
 function Layout({ children }: props) {
-	const [isMenu, setIsMenu] = useState(false);
+	const [isMenu, setIsMenu] = useState(true);
 	const [isLoadMain, setIsLoadMain] = useState(false);
 
 	const router = useRouter();
