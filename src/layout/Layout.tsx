@@ -14,14 +14,9 @@ type props = {
 
 function Layout({ children }: props) {
 	const [isMenu, setIsMenu] = useState(true);
-	// const [isLoadMain, setIsLoadMain] = useState(false);
 
 	const router = useRouter();
 	const windowSize = useWindowSize();
-
-	// useEffect(() => {
-	// 	setTimeout(async () => setIsLoadMain(true), 300);
-	// }, []);
 
 	useEffect(() => {
 		setIsMenu(windowSize.width <= 1124);
@@ -46,16 +41,7 @@ function Layout({ children }: props) {
 					<Sidebar />
 				</>
 			)}
-			<Main>
-				{/* {isLoadMain ? (
-					children
-				) : (
-					<LoaderContainer>
-						<Loader color='#5a57FF' />
-					</LoaderContainer>
-				)} */}
-				{children}
-			</Main>
+			<Main>{children}</Main>
 			<Footer />
 		</>
 	);
