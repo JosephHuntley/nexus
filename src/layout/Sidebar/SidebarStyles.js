@@ -25,17 +25,30 @@ export const Links = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-	color: ${(props) =>
-		props.route ? '#ffffff' : props.theme.colors.side_links};
+	color: ${(props) => (props.route ? '#fff' : props.theme.colors.side_links)};
 	font-size: 16px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 
 	&:active {
-		color: #ffffff;
+		background: linear-gradient(
+			90deg,
+			rgba(204, 204, 204, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		width: max-content;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	&:hover {
-		color: #ffffff;
+		background: linear-gradient(
+			90deg,
+			rgba(204, 204, 204, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		width: max-content;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 `;
 
@@ -49,7 +62,14 @@ export const LogoutButton = styled.button`
 	background-color: transparent;
 	border: transparent;
 	&:hover {
-		color: #ffffff;
+		background: linear-gradient(
+			90deg,
+			rgba(204, 204, 204, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		width: max-content;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		cursor: pointer;
 	}
 `;

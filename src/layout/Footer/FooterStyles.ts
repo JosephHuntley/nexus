@@ -45,5 +45,5 @@ export const Links = styled.div`
 
 export const StyledLink = styled(Link)`
 	color: ${(props) => props.theme.colors.side_links};
-	font-size: 16px;
+	font-size: 1.6rem;
 `;

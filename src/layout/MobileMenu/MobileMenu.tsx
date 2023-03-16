@@ -30,11 +30,14 @@ function MobileMenu() {
 				{isMenuOpen ? (
 					<>
 						<Background
+							// role='button'
+							// id='menu'
 							onClick={() => {
 								setIsMenuOpen(false);
 							}}
 						/>
 						<Hamburger
+							label='menu'
 							toggled={isMenuOpen}
 							toggle={() => setIsMenuOpen((prevState) => !prevState)}
 						/>
@@ -71,6 +74,7 @@ function MobileMenu() {
 					</>
 				) : (
 					<Hamburger
+						label='menu'
 						toggled={isMenuOpen}
 						toggle={() => setIsMenuOpen((prevState) => !prevState)}
 					/>

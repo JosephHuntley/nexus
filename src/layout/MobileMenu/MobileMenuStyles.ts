@@ -42,10 +42,24 @@ export const StyledLink = styled(Link)<{ route: boolean }>`
 	padding: 5px;
 
 	&:active {
-		color: #ffffff;
+		background: linear-gradient(
+			90deg,
+			rgba(204, 204, 204, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		width: max-content;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	&:hover {
-		color: #ffffff;
+		background: linear-gradient(
+			90deg,
+			rgba(204, 204, 204, 1) 0%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		width: max-content;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 `;
 export const LogoutButton = styled.button`

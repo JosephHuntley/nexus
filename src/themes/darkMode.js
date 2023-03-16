@@ -6,12 +6,12 @@ const theme = {
 	},
 	// Colors for layout
 	colors: {
-		bg_primary: '#5A57FF',
+		bg_primary: '#5a57FF',
 		bg_secondary: '#353535',
 		bg_white: '#555',
 		text_primary: '#fff',
 		text_secondary: '#FAF9FF',
-		side_links: '#cccccc',
+		side_links: '#fff',
 	},
 	// Breakpoints for responsive design
 	breakpoints: {
