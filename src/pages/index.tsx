@@ -1,20 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import {
-	Main,
-	LeftSide,
-	Text,
-	RightSide,
-	Title,
-	Label,
-	Field,
-	Input,
-} from '../styles/pages/indexStyles';
-import Box from '@/components/Global/Box/Box';
-import { InnerBox } from '@/styles/globals';
-import Button from '@/components/Global/Button/Button';
-import { useRouter } from 'next/router';
+import { Main, LeftSide, Text, RightSide } from '../styles/pages/indexStyles';
+
+import LoginBox from '../components/Authentication/LoginBox/LoginBox';
 import Alert from '@/components/Global/Alert/Alert';
 
 export default function Login() {
@@ -22,10 +11,6 @@ export default function Login() {
 	const [text2, setText2] = useState('');
 	const [text3, setText3] = useState('');
 	const [text4, setText4] = useState('');
-	const [username, setUsername] = useState('');
-	const [password, setPassword] = useState('');
-
-	const router = useRouter();
 
 	const text = [
 		'Welcome to',
@@ -82,46 +67,14 @@ export default function Login() {
 					</Text>
 				</LeftSide>
 				<RightSide>
-					<Title>Login</Title>
-					<Box
-						radius='10px'
-						width='40vw'
-						height='335px'
-						md_height='335px'
-						md_width='80vw'>
-						<InnerBox
-							direction='column'
-							height='100%'
-							gap='50px'
-							md_gap='25px'>
-							<Field>
-								<Label htmlFor='username'>Username:</Label>
-								<Input
-									type='email'
-									name='username'
-									value={username}
-									onChange={(e) => setUsername(e.target.value)}></Input>
-							</Field>
-							<Field>
-								<Label htmlFor='password'>Password:</Label>
-								<Input
-									type='password'
-									name='password'
-									value={password}
-									onChange={(e) => setPassword(e.target.value)}></Input>
-							</Field>
-							<Button
-								click={() => {
-									// TODO: Validate username and password
-									// TODO: set cookie isLoggedIn
-									router.push('/dashboard');
-								}}>
-								Submit
-							</Button>
-						</InnerBox>
-					</Box>
+					<LoginBox />
 				</RightSide>
 			</Main>
 		</>
 	);
+}
+function delayForDemo(promise: any) {
+	return new Promise((resolve) => {
+		setTimeout(resolve, 2000);
+	}).then(() => promise);
 }
