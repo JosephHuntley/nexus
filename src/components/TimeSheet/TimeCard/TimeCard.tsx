@@ -93,6 +93,7 @@ function TimeCard() {
 					<Col>
 						<Field
 							required
+							aria-label='Monday Hours'
 							type='text'
 							value={hoursWorked.Monday}
 							onChange={(e) =>
@@ -104,6 +105,7 @@ function TimeCard() {
 						/>
 						<Field
 							required
+							aria-label='Tuesday Hours'
 							type='text'
 							value={hoursWorked.Tuesday}
 							onChange={(e) =>
@@ -115,6 +117,7 @@ function TimeCard() {
 						/>
 						<Field
 							required
+							aria-label='Wednesday Hours'
 							type='text'
 							value={hoursWorked.Wednesday}
 							onChange={(e) =>
@@ -126,6 +129,7 @@ function TimeCard() {
 						/>
 						<Field
 							required
+							aria-label='Thursday Hours'
 							type='text'
 							value={hoursWorked.Thursday}
 							onChange={(e) =>
@@ -137,6 +141,7 @@ function TimeCard() {
 						/>
 						<Field
 							required
+							aria-label='Friday Hours'
 							type='text'
 							value={hoursWorked.Friday}
 							onChange={(e) =>
@@ -148,6 +153,7 @@ function TimeCard() {
 						/>
 						<Field
 							required
+							aria-label='Saturday Hours'
 							type='text'
 							value={hoursWorked.Saturday}
 							onChange={(e) =>
@@ -159,6 +165,7 @@ function TimeCard() {
 						/>
 						<Field
 							type='text'
+							aria-label='Sunday Hours'
 							value={hoursWorked.Sunday}
 							onChange={(e) =>
 								setHoursWorked({

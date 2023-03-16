@@ -54,6 +54,7 @@ function RequestForm() {
 							height='100%'>
 							<RequestSubtitle>Begin Date</RequestSubtitle>
 							<RequestDate
+								aria-label='Start Date'
 								type='date'
 								id='beginDate'
 								name='beginDate'
@@ -78,6 +79,7 @@ function RequestForm() {
 							height='100%'>
 							<RequestSubtitle>End Date</RequestSubtitle>
 							<RequestDate
+								aria-label='End Date'
 								type='date'
 								id='endDate'
 								name='endDate'
@@ -104,6 +106,7 @@ function RequestForm() {
 
 							<RequestType
 								id='type'
+								aria-label='Request Type'
 								name='type'
 								value={type}
 								onChange={(e) => {
