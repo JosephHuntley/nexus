@@ -41,10 +41,10 @@ export const MenuItem = styled.div<{ isWhite: boolean }>`
 	}
 `;
 export const Separator = styled.div`
-	border: 0.5px solid ${(props) => props.theme.colors.side_links};
+	border: 0.5px solid ${(props) => props.theme.colors.separator};
 `;
 export const HorizontalSeparator = styled.div`
-	border: 0.05rem solid ${(props) => props.theme.colors.side_links};
+	border: 0.05rem solid ${(props) => props.theme.colors.separator};
 	width: 0.05rem;
 	margin: 0 10px;
 	min-height: 10px;

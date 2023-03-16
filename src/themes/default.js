@@ -10,8 +10,9 @@ const theme = {
 		bg_secondary: '#FAF9FF',
 		bg_white: '#fff',
 		text_primary: '#353535',
-		text_secondary: '#888888',
+		text_secondary: '#565656',
 		side_links: '#fff',
+		separator: '#ccc',
 	},
 	// Breakpoints for responsive design
 	breakpoints: {

@@ -12,6 +12,7 @@ const theme = {
 		text_primary: '#fff',
 		text_secondary: '#FAF9FF',
 		side_links: '#fff',
+		separator: '#ccc',
 	},
 	// Breakpoints for responsive design
 	breakpoints: {
