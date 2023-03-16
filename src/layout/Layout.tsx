@@ -2,10 +2,11 @@ import React, { useEffect, ReactNode, useState } from 'react';
 import { useRouter } from 'next/router';
 import Sidebar from './Sidebar/Sidebar';
 import Header from './Header/Header';
-import { Main } from './LayoutStyles';
+import { Main, LoaderContainer } from './LayoutStyles';
 import useWindowSize from '@/customHooks/useWindowSize';
 import MobileMenu from './MobileMenu/MobileMenu';
 import Footer from './Footer/Footer';
+import { RingLoader as Loader } from 'react-spinners';
 
 type props = {
 	children: ReactNode;
@@ -13,8 +14,14 @@ type props = {
 
 function Layout({ children }: props) {
 	const [isMenu, setIsMenu] = useState(false);
+	const [isLoadMain, setIsLoadMain] = useState(false);
+
 	const router = useRouter();
 	const windowSize = useWindowSize();
+
+	useEffect(() => {
+		setTimeout(() => setIsLoadMain(true), 500);
+	}, []);
 
 	useEffect(() => {
 		setIsMenu(windowSize.width <= 1124);
@@ -39,8 +46,15 @@ function Layout({ children }: props) {
 					<Sidebar />
 				</>
 			)}
-
-			<Main>{children}</Main>
+			<Main>
+				{isLoadMain ? (
+					children
+				) : (
+					<LoaderContainer>
+						<Loader color='#5a57FF' />
+					</LoaderContainer>
+				)}
+			</Main>
 			<Footer />
 		</>
 	);
