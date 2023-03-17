@@ -29,3 +29,10 @@ When promoted to login, just hit the button without typing anything into the use
 #
 
 Updating user data will temporarily update it until the page is refreshed. Normally, you would retrieve the data from the DB and update it when the user updates it.
+
+## Technology Used
+
+- Java Script & TypeScript
+- React (NextJS)
+- Styled Components
+- ChartJS
