@@ -3,12 +3,14 @@ import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 
 export const InnerBox = styled.article`
 	width: 100%;
-	height: 100%;
+	height: calc(100% - 2rem);
 	padding: 1rem 0.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border-radius: 4rem;
+	overflow-x: hidden;
+	border-radius: 4rem 4rem 0 0;
 `;
 
 export const MiddleDiv = styled.div`
