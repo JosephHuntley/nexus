@@ -50,26 +50,19 @@ function LatestPay() {
 					</Button>
 				</MiddleDiv>
 				<BottomDiv>
-					<Section>
+					<Section
+						onClick={() => {
+							isOpen[0]
+								? setIsOpen([false, false, false])
+								: setIsOpen([true, false, false]);
+						}}>
 						<Top>
 							<Row>
 								<GreenCircle />
 								Take Home
 							</Row>
 							$1399.40
-							{isOpen[0] === true ? (
-								<DownArrow
-									onClick={() => {
-										setIsOpen([false, false, false]);
-									}}
-								/>
-							) : (
-								<UpArrow
-									onClick={() => {
-										setIsOpen([true, false, false]);
-									}}
-								/>
-							)}
+							{isOpen[0] === true ? <DownArrow /> : <UpArrow />}
 						</Top>
 						{isOpen[0] === true ? (
 							<Bottom>
@@ -88,26 +81,19 @@ function LatestPay() {
 							</Bottom>
 						) : null}
 					</Section>
-					<Section>
+					<Section
+						onClick={() => {
+							isOpen[1]
+								? setIsOpen([false, false, false])
+								: setIsOpen([false, true, false]);
+						}}>
 						<Top>
 							<Row>
 								<RedCircle />
 								Taxes
 							</Row>
 							$320.60
-							{isOpen[1] === true ? (
-								<DownArrow
-									onClick={() => {
-										setIsOpen([false, false, false]);
-									}}
-								/>
-							) : (
-								<UpArrow
-									onClick={() => {
-										setIsOpen([false, true, false]);
-									}}
-								/>
-							)}
+							{isOpen[1] === true ? <DownArrow /> : <UpArrow />}
 						</Top>
 						{isOpen[1] === true ? (
 							<Bottom>
@@ -130,26 +116,19 @@ function LatestPay() {
 							</Bottom>
 						) : null}
 					</Section>
-					<Section>
+					<Section
+						onClick={() => {
+							isOpen[0]
+								? setIsOpen([false, false, false])
+								: setIsOpen([false, false, true]);
+						}}>
 						<Top>
 							<Row>
 								<YellowCircle />
 								Deductions
 							</Row>
 							$17.20
-							{isOpen[2] === true ? (
-								<DownArrow
-									onClick={() => {
-										setIsOpen([false, false, false]);
-									}}
-								/>
-							) : (
-								<UpArrow
-									onClick={() => {
-										setIsOpen([false, false, true]);
-									}}
-								/>
-							)}
+							{isOpen[2] === true ? <DownArrow /> : <UpArrow />}
 						</Top>
 						{isOpen[2] === true ? (
 							<Bottom>
