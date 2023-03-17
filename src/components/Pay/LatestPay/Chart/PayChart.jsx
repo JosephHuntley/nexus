@@ -21,7 +21,19 @@ const PayChart = () => {
 	});
 	return (
 		<>
-			<Doughnut data={data} />
+			<Doughnut
+				data={data}
+				options={{
+					plugins: {
+						legend: {
+							display: false,
+							labels: {
+								color: 'black',
+							},
+						},
+					},
+				}}
+			/>
 		</>
 	);
 };

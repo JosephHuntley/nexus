@@ -21,7 +21,7 @@ export const MiddleDiv = styled.div`
 `;
 
 export const Chart = styled.div`
-	width: 75%;
+	/* width: 75%; */
 	/* height: 75%; */
 `;
 
