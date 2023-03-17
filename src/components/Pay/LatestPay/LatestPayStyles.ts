@@ -18,6 +18,12 @@ export const MiddleDiv = styled.div`
 
 	display: flex;
 	justify-content: space-between;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
 `;
 
 export const Chart = styled.div`
@@ -28,6 +34,14 @@ export const Chart = styled.div`
 export const Date = styled.p`
 	font-size: 1.6rem;
 	color: ${(props) => props.theme.colors.text_primary};
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 3rem;
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		font-size: 1.6rem;
+	}
 `;
 
 export const BottomDiv = styled.div`
@@ -52,6 +66,16 @@ export const Top = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+	font-size: 1.6rem;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 3rem;
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		font-size: 1.6rem;
+	}
 `;
 
 export const Row = styled.span`
@@ -59,6 +83,10 @@ export const Row = styled.span`
 	display: flex;
 	flex-direction: row;
 	gap: 0.5rem;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		width: inherit;
+	}
 `;
 
 export const GreenCircle = styled.div`
@@ -104,9 +132,25 @@ export const Secondary = styled.p`
 	font-size: 1.6rem;
 	margin-bottom: 0.5rem;
 	color: ${(props) => props.theme.colors.text_secondary};
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 3rem;
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		font-size: 1.6rem;
+	}
 `;
 
 export const Primary = styled.p`
 	font-size: 1.6rem;
 	color: ${(props) => props.theme.colors.text_primary};
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 3rem;
+	}
+
+	@media ${(props) => props.theme.breakpoints.phone} {
+		font-size: 1.6rem;
+	}
 `;
