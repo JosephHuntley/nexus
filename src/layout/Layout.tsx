@@ -22,13 +22,12 @@ function Layout({ children }: props) {
 		setIsMenu(windowSize.width <= 1124);
 	}, [windowSize]);
 
-	let isLoggedIn = true;
 	// TODO: Handle redirect if user not logged in.
 	useEffect(() => {
-		if (!isLoggedIn) {
+		if (window.localStorage.getItem('isLoggedIn') !== 'true') {
 			router.push('/');
 		}
-	}, [isLoggedIn]);
+	}, []);
 
 	return (
 		<>

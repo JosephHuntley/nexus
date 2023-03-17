@@ -68,7 +68,11 @@ const Sidebar = () => {
 				</StyledLink>
 				{/* Sign out button */}
 				{/* TODO: Logout functionality */}
-				<LogoutButton onChange={() => {}}>
+				<LogoutButton
+					onClick={() => {
+						window.localStorage.removeItem('isLoggedIn');
+						window.location.reload();
+					}}>
 					<Icon className=''>
 						<IoExitOutline />
 					</Icon>

@@ -47,6 +47,7 @@ const LoginBox = () => {
 						click={() => {
 							// TODO: Validate username and password
 							// TODO: set cookie isLoggedIn
+							window.localStorage.setItem('isLoggedIn', 'true');
 							router.push('/dashboard');
 						}}>
 						Submit

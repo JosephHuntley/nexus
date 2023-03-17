@@ -7,8 +7,18 @@ import LoginBox from '../components/Authentication/LoginBox/LoginBox';
 // Left Side
 import TextMessage from '@/components/Authentication/TextMessage/TextMessage';
 import Alert from '@/components/Global/Alert/Alert';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Login() {
+	const route = useRouter();
+
+	useEffect(() => {
+		if (window.localStorage.getItem('isLoggedIn') === 'true') {
+			route.push('/dashboard');
+		}
+	}, []);
+
 	return (
 		<>
 			{/* Adds things to the head tag of the page */}

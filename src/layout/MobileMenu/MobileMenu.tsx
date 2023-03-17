@@ -69,7 +69,13 @@ function MobileMenu() {
 								Settings
 							</StyledLink>
 							{/* TODO: Logout the functionality */}
-							<LogoutButton onChange={() => {}}>Sign Out</LogoutButton>
+							<LogoutButton
+								onClick={() => {
+									window.localStorage.removeItem('isLoggedIn');
+									window.location.reload();
+								}}>
+								Sign Out
+							</LogoutButton>
 						</Menu>
 					</>
 				) : (
