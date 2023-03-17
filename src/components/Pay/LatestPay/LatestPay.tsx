@@ -27,7 +27,7 @@ function LatestPay() {
 
 	return (
 		<Box
-			height='50rem'
+			height='55rem'
 			width='35rem'
 			md_height='60vh'
 			md_width='65vw'

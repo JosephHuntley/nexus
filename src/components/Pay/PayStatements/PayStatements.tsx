@@ -101,7 +101,7 @@ const PayStatements = () => {
 
 	return (
 		<Box
-			height='50rem'
+			height='55rem'
 			width='65.6rem'
 			md_height='60vh'
 			md_width='95vw'
