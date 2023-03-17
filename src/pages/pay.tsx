@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../layout/Layout';
 import LatestPay from '@/components/Pay/LatestPay/LatestPay';
 import PayStatements from '@/components/Pay/PayStatements/PayStatements';
-import Alert from '@/components/Global/Alert/Alert';
 import { Container, TitleContainer } from '@/styles/pages/PayStyles';
 import { Title } from '@/styles/globals';
 import Head from 'next/head';
@@ -26,10 +25,6 @@ function Pay() {
 				/>
 			</Head>
 			<Layout>
-				<Alert open={true}>
-					This page is still under development and may not work properly on all
-					devices.
-				</Alert>
 				<TitleContainer>
 					<Title>Pay Statements</Title>
 				</TitleContainer>
