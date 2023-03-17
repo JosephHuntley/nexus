@@ -17,7 +17,7 @@ function Footer() {
 				<Links>
 					<StyledLink href='/dashboard'>Dashboard</StyledLink>
 					<StyledLink href='/pay'>Pay</StyledLink>
-					<StyledLink href='/benefits'>Benefits</StyledLink>
+					{/* <StyledLink href='/benefits'>Benefits</StyledLink> */}
 					<StyledLink href='/timesheet'>Timesheet</StyledLink>
 					<StyledLink href='/settings'>Settings</StyledLink>
 				</Links>
