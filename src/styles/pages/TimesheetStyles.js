@@ -6,6 +6,25 @@ export const InnerBox = styled.div`
 	width: 100%;
 `;
 
+export const PTOBox = styled.div`
+height: 4rem;
+width: 8rem;
+border-radius: 4px;
+border: 1px solid rgba(0,0,0,.2);
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+@media ${props => props.theme.breakpoints.tablet} {
+	height: 8rem;
+	width: 20rem;
+}
+@media ${props => props.theme.breakpoints.phone} {
+	height: 4rem;
+	width: 12rem;
+}
+`
+
 export const TitleContainer = styled.div`
 	margin-left: 50px;
 	margin-top: 26px;

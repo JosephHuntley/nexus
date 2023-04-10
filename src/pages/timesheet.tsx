@@ -14,6 +14,7 @@ import {
 	VacationText,
 	VacationSubtitle,
 	Icon,
+	PTOBox
 } from '@/styles/pages/TimesheetStyles';
 import { Separator, Title } from '@/styles/globals';
 import RequestForm from '@/components/TimeSheet/RequestForm/RequestForm';
@@ -61,28 +62,16 @@ function Timesheet() {
 							</Icon>
 							{/* TODO: Change Static number to dynamic value */}
 							<BoxContainer>
-								<Box
-									width='7.6rem'
-									height='3.8rem'
-									radius='3px'
-									md_height='6.5rem'
-									md_width='17.6rem'
-									sm_height='5rem'
-									sm_width='12rem'>
+								<PTOBox
+									>
 									<VacationSubtitle>107HR 43MIN</VacationSubtitle>
 									<VacationText>Available</VacationText>
-								</Box>
-								<Box
-									width='7.6rem'
-									height='3.8rem'
-									radius='3px'
-									md_height='6.5rem'
-									md_width='17.6rem'
-									sm_height='5rem'
-									sm_width='12rem'>
+								</PTOBox>
+								<PTOBox
+									>
 									<VacationSubtitle>0HR 0MIN</VacationSubtitle>
 									<VacationText>Avail</VacationText>
-								</Box>
+								</PTOBox>
 							</BoxContainer>
 						</Box>
 						<Box
@@ -101,28 +90,16 @@ function Timesheet() {
 								</VacationIcon>
 							</Icon>
 							<BoxContainer>
-								<Box
-									width='76px'
-									height='38px'
-									radius='3px'
-									md_height='6.5rem'
-									md_width='17.6rem'
-									sm_height='5rem'
-									sm_width='12rem'>
+								<PTOBox
+									>
 									<VacationSubtitle>16HR 0MIN</VacationSubtitle>
 									<VacationText>Available</VacationText>
-								</Box>
-								<Box
-									width='76px'
-									height='38px'
-									radius='3px'
-									md_height='6.5rem'
-									md_width='17.6rem'
-									sm_height='5rem'
-									sm_width='12rem'>
+								</PTOBox>
+								<PTOBox
+									>
 									<VacationSubtitle>17HR 0MIN</VacationSubtitle>
 									<VacationText>Avail</VacationText>
-								</Box>
+								</PTOBox>
 							</BoxContainer>
 						</Box>
 					</VacationContainer>
