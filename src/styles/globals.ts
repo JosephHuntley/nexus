@@ -18,7 +18,14 @@ const GlobalStyles = createGlobalStyle<theme>`
     font-size: 1.6rem;
     background: ${(props) => props.theme.colors.bg_secondary};
     color: ${(props) => props.theme.colors.text_primary};
-    cursor: default;
+
+	@media ${(props) => props.theme.breakpoints.tablet} {
+		font-size: 2rem;
+	}
+
+	@media ${props => props.theme.breakpoints.xl} {
+		font-size: 3rem;
+	}
   }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${(props) => props.theme.fonts.title};
@@ -33,33 +40,35 @@ const GlobalStyles = createGlobalStyle<theme>`
 export default GlobalStyles;
 
 export const Title = styled.h2`
-	font-size: 26px;
+	font-size: 2.6rem;
 	font-weight: bold;
 	color: ${(props) => props.theme.colors.text_primary};
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
-		font-size: 32px;
+		font-size: 3.2rem;
+	}
+	@media ${props => props.theme.breakpoints.xl} {
+		font-size: 3.5rem;
 	}
 `;
 export const TitleSecondary = styled.h2`
-	font-size: 20px;
+	font-size: 2rem;
 	font-style: normal;
 	font-weight: 375;
 	color: ${(props) => props.theme.colors.text_secondary};
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
-		font-size: 2rem;
 		align-self: center;
+	}
+
+	@media ${props => props.theme.breakpoints.xl} {
+		font-size: 3rem;
 	}
 `;
 export const Text = styled.p`
-	font-size: 16px;
-	font-weight: 600;
 	color: ${(props) => props.theme.colors.text_secondary};
 
-	@media ${(props) => props.theme.breakpoints.tablet} {
-		font-size: 2rem;
-	}
+	
 `;
 export const Separator = styled.div`
 	border: 0.5px solid ${(props) => props.theme.colors.text_secondary};
@@ -75,13 +84,14 @@ export const InnerBox = styled.div<{
 	md_padding?: string;
 }>`
 	width: 100%;
-	height: ${(props) => props.height};
+	height: ${props => props.height};
 	display: flex;
 	flex-direction: ${(props) => props.direction};
 	justify-content: center;
 	align-items: center;
 	gap: ${(props) => props.gap};
 	padding: ${(props) => props.padding};
+	overflow-y: scroll;
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		gap: ${(props) => props.md_gap};
