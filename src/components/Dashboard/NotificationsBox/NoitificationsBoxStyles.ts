@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { InnerBox } from '@/styles/globals';
 
 export const Inner = styled(InnerBox)`
-padding: 2rem 0;
-height: 100%;
+margin: 2rem 0;
+height: calc(100% - 4rem);
 
 `
 
