@@ -18,15 +18,16 @@ export const Container = styled.div<{
 	width: ${(props) => props.width};
 	height: ${(props) => props.height};
 	/* First checks if there should be a box shadow. Then checks if dark mode is enabled */
-	box-shadow: ${(props) =>
+	/* TODO: Delete box-shadow or keep it  */
+	/* box-shadow: ${(props) =>
 		props.isShadow
 			? props.theme.colors.bg_white === '#fff'
 				? '0px 4px 4px rgba(0, 0, 0, 0.25)'
 				: 'none'
-			: 'none'};
-	&:hover {
+			: 'none'}; */
+	/* &:hover {
 		box-shadow: none;
-	}
+	} */
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		width: ${(props) => props.md_width};
