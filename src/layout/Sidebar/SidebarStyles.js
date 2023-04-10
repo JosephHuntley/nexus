@@ -26,7 +26,6 @@ export const Links = styled.div`
 
 export const StyledLink = styled(Link)`
 	color: ${(props) => (props.route ? '#fff' : props.theme.colors.side_links)};
-	font-size: 16px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 
@@ -54,8 +53,6 @@ export const StyledLink = styled(Link)`
 
 export const LogoutButton = styled.button`
 	color: ${(props) => props.theme.colors.side_links};
-	font-size: 16px;
-	line-height: 24px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	display: flex;
@@ -84,6 +81,11 @@ export const Icon = styled(MyProvider)`
 	margin-right: 17px;
 	background-color: ${(props) => props.theme.colors.bg_primary};
 	align-self: center;
+
+	@media ${props => props.theme.breakpoints.xl} {
+		width: 4rem;
+		height: 4rem;
+	}
 `;
 export const IconImg = styled(Image)`
 	width: 24px;

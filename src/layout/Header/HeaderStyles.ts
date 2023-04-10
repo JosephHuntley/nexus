@@ -46,12 +46,9 @@ export const UserInfo = styled.div`
 
 export const Name = styled.p`
 	color: ${(props) => props.theme.colors.text_primary};
-	font-size: 16px;
-	line-height: 24px;
 `;
 
 export const Email = styled.p`
 	color: ${(props) => props.theme.colors.text_secondary};
-	font-size: 12px;
-	line-height: 18px;
+	font-size: 1.2rem;
 `;
