@@ -40,24 +40,6 @@ export default function Home() {
 				<Container>
 					<BoxContainer>
 						<PayStatement />
-						{/* <PayStatement
-							type='Latest'
-							amount='$2500.00'
-							date='Jan 27th, 2023'
-							hours={80}
-						/>
-						<PayStatement
-							type='Previous'
-							amount='$1500.00'
-							date='Jan 27th, 2023'
-							hours={80}
-						/>
-						<PayStatement
-							type='Average'
-							amount='$2000.00'
-							date='Jan 27th, 2023'
-							hours={80}
-						/> */}
 					</BoxContainer>
 					<NotificationTitle>
 						<Title>Notifications</Title>
