@@ -8,7 +8,6 @@ export const Container = styled.div`
 	margin-top: 26px;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	gap: 26px;
 
 	@media ${(props) => props.theme.breakpoints.tablet} {
