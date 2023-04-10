@@ -23,7 +23,9 @@ const PayStatement = () => {
 				sm_width='75vw'
 				sm_height='50vw'
 				md_height='25vw'
-				md_width='32.5vw'>
+				md_width='32.5vw'
+				xl_height='13vw'
+				xl_width='19vw'>
 				<InnerBox>
 					<TitleSecondary>Latest Pay Statement</TitleSecondary>
 					<Div1>
@@ -53,7 +55,9 @@ const PayStatement = () => {
 				sm_width='75vw'
 				sm_height='50vw'
 				md_height='25vw'
-				md_width='32.5vw'>
+				md_width='32.5vw'
+				xl_height='13vw'
+				xl_width='19vw'>
 				<InnerBox>
 					<TitleSecondary>Latest Pay Statement</TitleSecondary>
 					<Div1>
@@ -83,7 +87,9 @@ const PayStatement = () => {
 				sm_width='75vw'
 				sm_height='50vw'
 				md_height='25vw'
-				md_width='32.5vw'>
+				md_width='32.5vw'
+				xl_height='13vw'
+				xl_width='19vw'>
 				<InnerBox>
 					<TitleSecondary>Average Pay Statement</TitleSecondary>
 					<Div1>

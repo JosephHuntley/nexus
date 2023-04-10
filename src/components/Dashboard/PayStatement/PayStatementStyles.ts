@@ -18,11 +18,14 @@ export const InnerBox = styled.article`
 export const Money = styled.h3`
 	font-style: normal;
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 2.6rem;
 	letter-spacing: 0.03em;
 
 	@media ${(props) => props.theme.breakpoints.phone} {
 		font-size: 2.5rem;
+	}
+	@media ${props => props.theme.breakpoints.xl} {
+		font-size: 3.5rem;
 	}
 `;
 
@@ -33,6 +36,10 @@ export const Div1 = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	width: 175px;
+
+	@media ${props => props.theme.breakpoints.xl} {
+		width: initial;
+	}
 `;
 
 export const Eye = styled(AiOutlineEye)`
@@ -44,6 +51,11 @@ export const Eye = styled(AiOutlineEye)`
 		width: 2.5rem;
 		height: 2.5rem;
 	}
+
+	@media ${props => props.theme.breakpoints.xl} {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
 `;
 
 export const InvisibleEye = styled(AiOutlineEyeInvisible)`
@@ -54,5 +66,10 @@ export const InvisibleEye = styled(AiOutlineEyeInvisible)`
 	@media ${(props) => props.theme.breakpoints.tablet} {
 		width: 2.5rem;
 		height: 2.5rem;
+	}
+
+	@media ${props => props.theme.breakpoints.xl} {
+		width: 3.5rem;
+		height: 3.5rem;
 	}
 `;
