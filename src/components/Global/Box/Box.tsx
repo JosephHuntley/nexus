@@ -22,7 +22,7 @@ function Box({
 	width = '328px',
 	height = '237px',
 	isShadow = true,
-	radius = '40px',
+	radius,
 	md_height = height,
 	md_width = width,
 	sm_height = md_height,
