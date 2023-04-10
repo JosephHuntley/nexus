@@ -1,15 +1,7 @@
 import styled from 'styled-components';
+import { BoxProps } from './Box';
 
-export const Container = styled.div<{
-	radius: string;
-	width: string;
-	height: string;
-	isShadow: boolean;
-	md_width?: string;
-	md_height?: string;
-	sm_height?: string;
-	sm_width?: string;
-}>`
+export const Container = styled.div<BoxProps>`
 	border: 1px solid ${(props) => props.theme.colors.text_secondary};
 	background: ${(props) => props.theme.colors.bg_white};
 	border-radius: ${(props) => props.radius};
@@ -37,5 +29,9 @@ export const Container = styled.div<{
 	@media ${(props) => props.theme.breakpoints.phone} {
 		width: ${(props) => props.sm_width};
 		height: ${(props) => props.sm_height};
+	}
+	@media ${props => props.theme.breakpoints.xl} {
+		width: ${(props) => props.xl_width};
+		height: ${(props) => props.xl_height};
 	}
 `;

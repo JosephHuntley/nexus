@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './BoxStyles';
 
-type BoxProps = {
+export type BoxProps = {
 	children?: React.ReactNode;
 	width?: string;
 	height?: string;
@@ -11,7 +11,11 @@ type BoxProps = {
 	md_height?: string;
 	sm_height?: string;
 	sm_width?: string;
+	xl_height?:string;
+	xl_width?:string;
 };
+
+//TODO: Cleanup props
 
 function Box({
 	children,
@@ -23,6 +27,8 @@ function Box({
 	md_width = width,
 	sm_height = md_height,
 	sm_width = md_width,
+	xl_height = height,
+	xl_width = width
 }: BoxProps) {
 	return (
 		<Container
@@ -33,7 +39,9 @@ function Box({
 			md_height={md_height}
 			md_width={md_width}
 			sm_height={sm_height}
-			sm_width={sm_width}>
+			sm_width={sm_width} xl_height={xl_height}
+			xl_width={xl_width}
+			>
 			{children}
 		</Container>
 	);
