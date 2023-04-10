@@ -21,9 +21,10 @@ export type theme = {
 			side_links: string;
 		};
 		breakpoints: {
-			sm: string;
-			md: string;
-			lg: string;
+			xs: string;
+			phone: string;
+			tablet: string;
+			laptop: string;
 			xl: string;
 		};
 	};
