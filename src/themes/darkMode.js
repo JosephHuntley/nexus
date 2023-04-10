@@ -20,6 +20,7 @@ const theme = {
 		phone: 'screen and (max-width: 768px)',
 		tablet: 'screen and (max-width: 1024px)',
 		laptop: 'screen and (max-width: 1280px)',
+		xl:'screen and (min-width:2000px)'
 	},
 };
 export default theme;
