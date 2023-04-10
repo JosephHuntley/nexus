@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const InnerBox = styled.div`
 	width: 100%;
-	height: 95%;
+	height: calc(100% - 8rem);
 	padding: 0 1rem;
+	margin: 4rem 0;
 	padding-bottom: 3rem;
 
 	display: flex;
