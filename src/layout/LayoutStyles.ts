@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
 	padding-top: 96px;
-	padding-left: 280px;
+	padding-left: 20vw;
 	padding-bottom: 30px;
 	min-height: 100vh;
 
