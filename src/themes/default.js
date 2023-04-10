@@ -7,7 +7,7 @@ const theme = {
 	// Colors for layout
 	colors: {
 		bg_primary: '#5a57FF',
-		bg_secondary: '#FAF9FF',
+		bg_secondary: '#F5F5F5',
 		bg_white: '#fff',
 		text_primary: '#353535',
 		text_secondary: '#565656',
