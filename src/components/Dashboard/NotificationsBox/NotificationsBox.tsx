@@ -1,25 +1,24 @@
 import React from 'react';
-import Box from '../../Global/Box/Box';
 import {
 	NotificationTitle,
 	Status,
 	Div1,
 	Notification,
+	Inner
 } from './NoitificationsBoxStyles';
-import { InnerBox } from '@/styles/globals';
+import Box from '@/components/Global/Box/Box';
+
 
 function NotificationsBox() {
 	return (
 		<Box
-			width='1032px'
-			height='274px'
+			width='71.6vw'
+			height='33vh'
 			md_height='inherit'
 			md_width='90vw'>
-			<InnerBox
-				padding='48px 116px'
+			<Inner
 				md_padding='24px 48px'
-				height='100%'
-				direction='column'>
+				direction='column'> 
 				<Notification>
 					<NotificationTitle>Welcome to Our New Webpage!</NotificationTitle>
 					<Div1>
@@ -55,7 +54,7 @@ function NotificationsBox() {
 						<Status>12:45</Status>
 					</Div1>
 				</Notification>
-			</InnerBox>
+			</Inner>
 		</Box>
 	);
 }

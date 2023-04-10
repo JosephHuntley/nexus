@@ -1,11 +1,20 @@
 import styled from 'styled-components';
+import { InnerBox } from '@/styles/globals';
+
+export const Inner = styled(InnerBox)`
+padding: 2rem 0;
+height: 100%;
+
+`
 
 export const Notification = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-top: 1rem;
 	margin-bottom: 48px;
-	width: 100%;
+	width: calc(100% - 10rem);
+
 	@media ${(props) => props.theme.breakpoints.phone} {
 		flex-direction: column;
 		gap: 10px;
@@ -14,8 +23,6 @@ export const Notification = styled.div`
 
 export const NotificationTitle = styled.div`
 	color: ${(props) => props.theme.colors.text_primary};
-	font-weight: 500;
-	font-size: 16px;
 	max-width: 100%;
 
 	@media ${(props) => props.theme.breakpoints.phone} {
