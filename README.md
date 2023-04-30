@@ -36,3 +36,13 @@ Updating user data will temporarily update it until the page is refreshed. Norma
 - React (NextJS)
 - Styled Components
 - ChartJS
+
+## TODO
+
+- Implement Tests
+- Implement Backend
+  - Authentication
+  - Retention of Data
+    - CRUD Operations
+- Avatar on Mobile Design
+- 
